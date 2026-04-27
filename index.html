@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Bogen Method — Lead Generation Plan</title>
+<meta name="description" content="The complete plan to fill The Founding 50 and sell out all four phases to 200 paid members." />
+<meta property="og:title" content="The Bogen Method — Lead Generation Plan" />
+<meta property="og:description" content="How to fill The Founding 50 and sell out all four phases to 200 paid members." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%231a3e5c'/><text x='50' y='66' text-anchor='middle' font-family='DM Sans,sans-serif' font-weight='700' font-size='48' fill='%2300a8e1'>EB</text></svg>" />
+
+<style>
+:root {
+  --navy: #1a3e5c;
+  --navy-deep: #0f2a42;
+  --navy-soft: #26537a;
+  --cyan: #00a8e1;
+  --cyan-deep: #0086b8;
+  --white: #ffffff;
+  --ink: #1a1a1a;
+  --gray-bg: #f4f4f4;
+  --gray-line: #e8e8e8;
+  --gray-txt: #5e6b78;
+  --gray-muted: #9aa6b2;
+  --gold: #e8b04b;
+  --emerald: #2fa37a;
+  --coral: #e96a5b;
+  --plum: #7a5fb5;
+  --sand: #f5efe4;
+  --shadow-sm: 0 1px 2px rgba(15,42,66,0.08);
+  --shadow: 0 4px 14px rgba(15,42,66,0.08);
+  --shadow-lg: 0 12px 32px rgba(15,42,66,0.14);
+  --r: 10px;
+  --r-sm: 6px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ───────── NAV ───────── */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(26,62,92,0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,168,225,0.15);
+}
+.nav-inner {
+  max-width: 1280px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 24px; gap: 24px;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 10px;
+  color: var(--white); text-decoration: none;
+  font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 15px;
+  letter-spacing: 0.02em;
+}
+.nav-logo {
+  width: 30px; height: 30px; border-radius: 6px;
+  background: var(--navy-deep);
+  display: grid; place-items: center;
+  color: var(--cyan); font-weight: 700; font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+}
+.nav-links { display: flex; gap: 6px; flex-wrap: wrap; }
+.nav-links a {
+  color: rgba(255,255,255,0.78); text-decoration: none;
+  font-size: 12px; font-weight: 500;
+  padding: 6px 10px; border-radius: 6px;
+  transition: all 0.18s;
+  letter-spacing: 0.01em;
+}
+.nav-links a:hover { color: var(--white); background: rgba(0,168,225,0.15); }
+.nav-cta {
+  background: var(--cyan); color: var(--white) !important;
+  padding: 8px 14px !important; border-radius: 6px !important;
+  font-weight: 600 !important;
+}
+.nav-cta:hover { background: var(--cyan-deep) !important; }
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+}
+
+/* ───────── HERO ───────── */
+.hero {
+  background: var(--navy);
+  color: var(--white);
+  padding: 80px 24px 100px;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 38%;
+  background: var(--navy-deep);
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  opacity: 0.85;
+}
+.hero::after {
+  content: ''; position: absolute; top: 40px; right: 40px; bottom: 40px; width: 200px;
+  background-image: radial-gradient(circle, rgba(0,168,225,0.45) 1.4px, transparent 1.4px);
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+.hero-inner { max-width: 1280px; margin: 0 auto; position: relative; z-index: 1; }
+.hero-eyebrow {
+  display: inline-block; padding: 6px 14px;
+  border-left: 3px solid var(--cyan);
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--cyan); margin-bottom: 24px;
+}
+.hero h1 {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: clamp(36px, 5.5vw, 64px); line-height: 1.05;
+  margin-bottom: 18px; letter-spacing: -0.02em;
+  max-width: 800px;
+}
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 19px);
+  color: #cfe6f5; max-width: 640px; margin-bottom: 40px;
+  line-height: 1.55;
+}
+.hero-stats {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 24px; max-width: 720px; margin-bottom: 36px;
+}
+.hero-stat-num {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: clamp(22px, 2.6vw, 32px); color: var(--cyan);
+  line-height: 1.1; margin-bottom: 4px; letter-spacing: -0.01em;
+}
+.hero-stat-lbl {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+}
+.hero-cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 22px; border-radius: 6px;
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+  text-decoration: none; cursor: pointer; border: 0;
+  transition: all 0.18s;
+}
+.btn-cyan { background: var(--cyan); color: var(--white); }
+.btn-cyan:hover { background: var(--cyan-deep); transform: translateY(-1px); box-shadow: var(--shadow); }
+.btn-ghost {
+  background: transparent; color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.3);
+}
+.btn-ghost:hover { border-color: var(--cyan); color: var(--cyan); }
+@media (max-width: 720px) {
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .hero { padding: 60px 20px 80px; }
+}
+
+/* ───────── SECTION ───────── */
+.section { padding: 80px 24px; }
+.section.alt { background: var(--gray-bg); }
+.section-inner { max-width: 1280px; margin: 0 auto; }
+.section-eyebrow {
+  display: inline-block; padding: 4px 0 4px 14px;
+  border-left: 3px solid var(--cyan);
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--cyan); margin-bottom: 14px;
+}
+.section h2 {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: clamp(28px, 3.6vw, 42px); color: var(--navy);
+  line-height: 1.1; margin-bottom: 14px; letter-spacing: -0.015em;
+  max-width: 800px;
+}
+.section-sub {
+  font-size: 17px; color: var(--gray-txt); max-width: 720px;
+  margin-bottom: 40px; line-height: 1.55;
+}
+
+/* ───────── PHASE COUNTER ───────── */
+.phase-counter {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+  color: var(--white); border-radius: var(--r);
+  padding: 36px; margin-bottom: 40px; position: relative; overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.phase-counter-grid {
+  display: grid; grid-template-columns: 1.4fr 1fr; gap: 36px; align-items: center;
+}
+.pc-eyebrow {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.18em; color: var(--cyan); margin-bottom: 10px;
+}
+.pc-title {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 26px; margin-bottom: 8px;
+}
+.pc-sub { color: #cfe6f5; font-size: 14px; margin-bottom: 18px; }
+.pc-bar-track {
+  height: 14px; background: rgba(255,255,255,0.1); border-radius: 999px; overflow: hidden;
+}
+.pc-bar-fill {
+  height: 100%; background: linear-gradient(90deg, var(--cyan), #4dd0ff);
+  border-radius: 999px; transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 0 12px rgba(0,168,225,0.5);
+}
+.pc-meta {
+  display: flex; justify-content: space-between; margin-top: 10px;
+  font-size: 12px; color: #9fb8cc;
+}
+.pc-numwrap {
+  text-align: center; padding: 24px;
+  background: rgba(0,168,225,0.08); border-radius: var(--r);
+  border: 1px solid rgba(0,168,225,0.2);
+}
+.pc-num {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 64px; color: var(--cyan); line-height: 1; letter-spacing: -0.02em;
+}
+.pc-num-sub { font-size: 13px; color: #cfe6f5; margin-top: 6px; letter-spacing: 0.05em; }
+@media (max-width: 720px) {
+  .phase-counter-grid { grid-template-columns: 1fr; gap: 24px; }
+  .pc-num { font-size: 48px; }
+}
+
+/* ───────── KPI CARDS ───────── */
+.kpi-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.kpi-card {
+  background: var(--white); border: 1px solid var(--gray-line);
+  border-radius: var(--r); padding: 22px;
+  border-top: 4px solid var(--cyan);
+  transition: all 0.2s;
+}
+.kpi-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.kpi-card.gold { border-top-color: var(--gold); }
+.kpi-card.coral { border-top-color: var(--coral); }
+.kpi-card.emerald { border-top-color: var(--emerald); }
+.kpi-card.plum { border-top-color: var(--plum); }
+.kpi-card.navy { border-top-color: var(--navy); }
+.kpi-lbl {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--cyan); margin-bottom: 10px;
+}
+.kpi-card.gold .kpi-lbl { color: var(--gold); }
+.kpi-card.coral .kpi-lbl { color: var(--coral); }
+.kpi-card.emerald .kpi-lbl { color: var(--emerald); }
+.kpi-card.plum .kpi-lbl { color: var(--plum); }
+.kpi-card.navy .kpi-lbl { color: var(--navy); }
+.kpi-big {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 28px; color: var(--navy); line-height: 1.05; margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+.kpi-sub { font-size: 13px; color: var(--gray-txt); }
+@media (max-width: 900px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ───────── PHASE LADDER ───────── */
+.ladder { margin-top: 30px; }
+.ladder-row {
+  display: grid; grid-template-columns: 1fr 160px;
+  gap: 12px; align-items: center; margin-bottom: 10px;
+}
+.ladder-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 18px; border-radius: var(--r-sm); color: var(--white);
+  position: relative;
+}
+.ladder-bar.p1 { background: var(--cyan); }
+.ladder-bar.p2 { background: var(--navy-soft); width: 90%; }
+.ladder-bar.p3 { background: var(--navy); width: 80%; }
+.ladder-bar.p4 { background: var(--navy-deep); width: 70%; }
+.ladder-name { font-weight: 600; font-size: 14px; }
+.ladder-price { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 16px; }
+.ladder-meta { font-size: 12px; color: var(--gray-txt); }
+.ladder-chip {
+  background: var(--navy-deep); color: var(--white); font-size: 9px;
+  padding: 3px 8px; border-radius: 999px; font-weight: 700;
+  letter-spacing: 0.1em; margin-left: 10px;
+}
+
+/* ───────── FLYWHEEL ───────── */
+.flywheel {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 40px; align-items: center;
+}
+.flywheel-svg-wrap { position: relative; padding: 20px; }
+.flywheel-list { display: flex; flex-direction: column; gap: 18px; }
+.fw-item {
+  background: var(--white); border-left: 4px solid var(--cyan);
+  padding: 16px 20px; border-radius: var(--r-sm); box-shadow: var(--shadow-sm);
+  transition: all 0.2s;
+}
+.fw-item:hover { transform: translateX(4px); box-shadow: var(--shadow); }
+.fw-item.gold { border-left-color: var(--gold); }
+.fw-item.emerald { border-left-color: var(--emerald); }
+.fw-item.plum { border-left-color: var(--plum); }
+.fw-item.coral { border-left-color: var(--coral); }
+.fw-num {
+  display: inline-block; font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 13px; color: var(--cyan); margin-right: 10px;
+}
+.fw-item.gold .fw-num { color: var(--gold); }
+.fw-item.emerald .fw-num { color: var(--emerald); }
+.fw-item.plum .fw-num { color: var(--plum); }
+.fw-item.coral .fw-num { color: var(--coral); }
+.fw-name {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--navy);
+}
+.fw-desc { font-size: 14px; color: var(--gray-txt); margin-top: 4px; }
+@media (max-width: 900px) {
+  .flywheel { grid-template-columns: 1fr; }
+}
+
+/* ───────── PERSONA CARDS ───────── */
+.persona-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+}
+.persona-card {
+  background: var(--white); border: 1px solid var(--gray-line);
+  border-radius: var(--r); overflow: hidden;
+  transition: all 0.25s;
+}
+.persona-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.persona-tag {
+  background: var(--cyan); color: var(--white);
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+  padding: 12px 20px;
+}
+.persona-card.r2 .persona-tag { background: var(--gold); }
+.persona-card.r3 .persona-tag { background: var(--emerald); }
+.persona-body { padding: 22px; }
+.persona-title {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 19px; color: var(--navy); margin-bottom: 4px;
+}
+.persona-tier {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 16px; color: var(--cyan); margin-bottom: 16px;
+}
+.persona-card.r2 .persona-tier { color: var(--gold); }
+.persona-card.r3 .persona-tier { color: var(--emerald); }
+.persona-section { margin-bottom: 14px; }
+.persona-h {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--coral); margin-bottom: 6px;
+}
+.persona-section.want .persona-h { color: var(--emerald); }
+.persona-section.ch .persona-h { color: var(--cyan); }
+.persona-list { list-style: none; }
+.persona-list li {
+  font-size: 13px; color: var(--gray-txt); padding-left: 14px;
+  position: relative; line-height: 1.5; margin-bottom: 4px;
+}
+.persona-list li::before {
+  content: '•'; color: var(--cyan); position: absolute; left: 0;
+}
+@media (max-width: 900px) { .persona-grid { grid-template-columns: 1fr; } }
+
+/* ───────── CHANNEL MATRIX ───────── */
+.channel-table {
+  background: var(--white); border-radius: var(--r); overflow: hidden;
+  box-shadow: var(--shadow-sm); border: 1px solid var(--gray-line);
+}
+.channel-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+  gap: 12px; padding: 14px 20px; align-items: center;
+  border-bottom: 1px solid var(--gray-line);
+  font-size: 13px;
+}
+.channel-row:last-child { border-bottom: 0; }
+.channel-row.head {
+  background: var(--navy); color: var(--white);
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.channel-row:not(.head):hover { background: var(--gray-bg); }
+.dots { display: flex; gap: 3px; }
+.dot { width: 8px; height: 8px; border-radius: 999px; background: var(--gray-line); }
+.dot.on { background: var(--navy); }
+.roi-pills { display: flex; gap: 3px; align-items: center; }
+.roi-pill { width: 14px; height: 8px; border-radius: 2px; background: var(--gray-line); }
+.roi-pill.r1.on { background: var(--cyan); }
+.roi-pill.r2.on { background: var(--gold); }
+.roi-pill.r3.on { background: var(--emerald); }
+.roi-num { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 12px; color: var(--navy); margin-left: 6px; }
+.channel-note { color: var(--gray-txt); font-size: 12px; }
+@media (max-width: 900px) {
+  .channel-row { grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; font-size: 11px; }
+  .channel-row > .channel-note { display: none; }
+}
+
+/* ───────── FUNNEL ───────── */
+.funnel-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 36px; }
+.funnel-stages { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+.funnel-bar {
+  color: var(--white); padding: 16px 22px;
+  border-radius: var(--r-sm);
+  display: flex; justify-content: space-between; align-items: center;
+  width: 100%; transition: transform 0.18s;
+}
+.funnel-bar:hover { transform: scale(1.02); }
+.fb-name {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+}
+.fb-count {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 22px; letter-spacing: -0.01em;
+}
+.fb-sub { font-size: 11px; color: rgba(255,255,255,0.85); margin-top: 4px; }
+.fb-content { display: flex; flex-direction: column; gap: 2px; }
+.lever-list { display: flex; flex-direction: column; gap: 14px; }
+.lever-item h4 {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 13px; color: var(--navy); margin-bottom: 4px;
+}
+.lever-item p { font-size: 13px; color: var(--gray-txt); line-height: 1.55; }
+@media (max-width: 900px) { .funnel-grid { grid-template-columns: 1fr; } }
+
+/* ───────── LADDER (LEAD MAGNET) ───────── */
+.lead-ladder { display: flex; flex-direction: column; gap: 8px; }
+.lm-rung {
+  display: grid; grid-template-columns: 1fr auto 2fr;
+  gap: 18px; align-items: center;
+}
+.lm-bar {
+  color: var(--white); padding: 14px 20px;
+  border-radius: var(--r-sm);
+}
+.lm-bar.r0 { background: var(--cyan); }
+.lm-bar.r1 { background: var(--navy-soft); }
+.lm-bar.r2 { background: var(--plum); }
+.lm-bar.r3 { background: var(--gold); }
+.lm-bar.r4 { background: var(--emerald); }
+.lm-bar.r5 { background: var(--coral); }
+.lm-bar.r6 { background: var(--navy-deep); }
+.lm-tag {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 9px; letter-spacing: 0.15em; opacity: 0.9; margin-bottom: 4px;
+}
+.lm-name { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 15px; }
+.lm-arrow { color: var(--gray-muted); font-size: 18px; }
+.lm-desc { font-size: 13px; color: var(--gray-txt); line-height: 1.5; }
+@media (max-width: 720px) {
+  .lm-rung { grid-template-columns: 1fr; gap: 4px; }
+  .lm-arrow { display: none; }
+  .lm-desc { padding-left: 4px; }
+}
+
+/* ───────── 3x3 PILLAR GRID ───────── */
+.pillar-table {
+  background: var(--white); border: 1px solid var(--gray-line);
+  border-radius: var(--r); overflow: hidden;
+}
+.pt-row {
+  display: grid; grid-template-columns: 100px 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--gray-line);
+}
+.pt-row:last-child { border-bottom: 0; }
+.pt-row.head {
+  background: var(--navy); color: var(--white);
+}
+.pt-cell {
+  padding: 16px 18px; font-size: 13px;
+  border-right: 1px solid var(--gray-line);
+}
+.pt-cell:last-child { border-right: 0; }
+.pt-row.head .pt-cell {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  border-right-color: rgba(255,255,255,0.15);
+}
+.pt-pillar {
+  background: var(--cyan); color: var(--white);
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  display: flex; align-items: center; justify-content: center;
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  padding: 24px 8px;
+}
+.pt-row.proof .pt-pillar { background: var(--emerald); }
+.pt-row.method .pt-pillar { background: var(--gold); }
+@media (max-width: 720px) {
+  .pt-row { grid-template-columns: 80px 1fr 1fr 1fr; font-size: 11px; }
+}
+
+/* ───────── WEEKLY CALENDAR ───────── */
+.week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+.day-col {
+  background: var(--white); border: 1px solid var(--gray-line);
+  border-radius: var(--r-sm); overflow: hidden; min-height: 280px;
+}
+.day-head {
+  background: var(--navy); color: var(--white);
+  padding: 10px; text-align: center;
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.12em;
+}
+.day-block {
+  padding: 10px 12px; border-left: 4px solid var(--cyan);
+  margin: 8px; background: var(--gray-bg);
+  border-radius: var(--r-sm);
+}
+.day-block.gold { border-left-color: var(--gold); }
+.day-block.emerald { border-left-color: var(--emerald); }
+.day-block.coral { border-left-color: var(--coral); }
+.day-block.plum { border-left-color: var(--plum); }
+.day-block.navy { border-left-color: var(--navy); }
+.dt { font-size: 10px; font-weight: 700; color: var(--cyan); margin-bottom: 4px; }
+.day-block.gold .dt { color: var(--gold); }
+.day-block.emerald .dt { color: var(--emerald); }
+.day-block.coral .dt { color: var(--coral); }
+.day-block.plum .dt { color: var(--plum); }
+.day-block.navy .dt { color: var(--navy); }
+.dl { font-size: 11px; color: var(--ink); line-height: 1.35; }
+@media (max-width: 900px) {
+  .week { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ───────── 30/60/90 PHASES ───────── */
+.phase-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.phase-col {
+  background: var(--white); border-radius: var(--r); overflow: hidden;
+  border: 1px solid var(--gray-line); transition: all 0.2s;
+}
+.phase-col:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.phase-head {
+  padding: 22px; color: var(--white); background: var(--cyan);
+}
+.phase-col.fuel .phase-head { background: var(--gold); }
+.phase-col.flywheel .phase-head { background: var(--emerald); }
+.phase-tag {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 10px; letter-spacing: 0.16em; opacity: 0.9; margin-bottom: 8px;
+}
+.phase-name {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 26px; letter-spacing: -0.01em; line-height: 1; margin-bottom: 10px;
+}
+.phase-goal { font-size: 13px; opacity: 0.95; line-height: 1.45; }
+.phase-body { padding: 22px; }
+.phase-body ol {
+  list-style: none; counter-reset: step;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.phase-body li {
+  counter-increment: step; padding-left: 36px; position: relative;
+  font-size: 13.5px; color: var(--ink); line-height: 1.5;
+}
+.phase-body li::before {
+  content: counter(step); position: absolute; left: 0; top: 0;
+  width: 24px; height: 24px; border-radius: 999px;
+  background: var(--cyan); color: var(--white);
+  display: grid; place-items: center;
+  font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 12px;
+}
+.phase-col.fuel .phase-body li::before { background: var(--gold); }
+.phase-col.flywheel .phase-body li::before { background: var(--emerald); }
+@media (max-width: 900px) { .phase-grid { grid-template-columns: 1fr; } }
+
+/* ───────── TECH STACK ───────── */
+.stack-list { display: flex; flex-direction: column; gap: 10px; }
+.stack-row {
+  background: var(--white); border-left: 5px solid var(--cyan);
+  padding: 16px 22px; border-radius: var(--r-sm);
+  display: grid; grid-template-columns: 130px 1fr;
+  gap: 24px; align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+.stack-row.nurture { border-left-color: var(--gold); }
+.stack-row.deliver { border-left-color: var(--emerald); }
+.stack-row.data { border-left-color: var(--plum); }
+.stack-row.team { border-left-color: var(--navy-soft); }
+.stack-name {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 12px; letter-spacing: 0.16em; color: var(--cyan);
+}
+.stack-row.nurture .stack-name { color: var(--gold); }
+.stack-row.deliver .stack-name { color: var(--emerald); }
+.stack-row.data .stack-name { color: var(--plum); }
+.stack-row.team .stack-name { color: var(--navy-soft); }
+.stack-tools { color: var(--gray-txt); font-size: 13.5px; line-height: 1.5; }
+
+/* ───────── OBJECTIONS ───────── */
+.obj-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px;
+}
+.obj-card {
+  background: var(--white); border: 1px solid var(--gray-line);
+  border-radius: var(--r); padding: 22px;
+  border-left: 5px solid var(--cyan);
+}
+.obj-card.gold { border-left-color: var(--gold); }
+.obj-card.emerald { border-left-color: var(--emerald); }
+.obj-card.plum { border-left-color: var(--plum); }
+.obj-card.coral { border-left-color: var(--coral); }
+.obj-tag {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 10px; letter-spacing: 0.14em; color: var(--cyan); margin-bottom: 8px;
+}
+.obj-card.gold .obj-tag { color: var(--gold); }
+.obj-card.emerald .obj-tag { color: var(--emerald); }
+.obj-card.plum .obj-tag { color: var(--plum); }
+.obj-card.coral .obj-tag { color: var(--coral); }
+.obj-q {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 17px; color: var(--navy); margin-bottom: 12px; line-height: 1.3;
+}
+.obj-a { font-size: 14px; color: var(--gray-txt); line-height: 1.55; }
+.obj-close {
+  background: var(--navy-deep); color: var(--white);
+  border-radius: var(--r); padding: 28px 32px; margin-top: 24px;
+  border-left: 5px solid var(--cyan);
+}
+.obj-close-tag { font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 10px; letter-spacing: 0.16em; color: var(--cyan); margin-bottom: 12px; }
+.obj-close-q { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.35; margin-bottom: 8px; }
+.obj-close-note { font-size: 13px; color: #bcd6e9; }
+@media (max-width: 720px) { .obj-grid { grid-template-columns: 1fr; } }
+
+/* ───────── RISK TABLE ───────── */
+.risk-table {
+  background: var(--white); border: 1px solid var(--gray-line);
+  border-radius: var(--r); overflow: hidden;
+}
+.risk-row {
+  display: grid; grid-template-columns: 2fr 100px 3fr 60px;
+  gap: 16px; padding: 14px 22px; align-items: center;
+  border-bottom: 1px solid var(--gray-line); font-size: 13px;
+}
+.risk-row.head {
+  background: var(--navy); color: var(--white);
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+}
+.risk-row:last-child { border-bottom: 0; }
+.severity-pill {
+  display: inline-block; padding: 4px 10px; border-radius: 999px;
+  font-family: 'Work Sans', sans-serif; font-weight: 700;
+  font-size: 10px; letter-spacing: 0.1em; color: var(--white);
+}
+.severity-pill.high { background: var(--coral); }
+.severity-pill.medium { background: var(--gold); }
+.severity-pill.low { background: var(--emerald); }
+.trend-bars { display: flex; gap: 3px; }
+.tb { width: 10px; height: 8px; border-radius: 2px; background: var(--gray-line); }
+.tb.high { background: var(--coral); }
+.tb.medium { background: var(--gold); }
+.tb.low { background: var(--emerald); }
+@media (max-width: 720px) {
+  .risk-row { grid-template-columns: 1.5fr 80px 2.5fr; font-size: 11px; }
+  .risk-row > .trend-bars { display: none; }
+}
+
+.guarantee-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }
+.guar-card {
+  background: var(--navy); color: var(--white);
+  border-radius: var(--r); padding: 18px;
+  border-top: 4px solid var(--cyan);
+}
+.guar-card.gold { border-top-color: var(--gold); }
+.guar-card.emerald { border-top-color: var(--emerald); }
+.guar-tag { font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 10px; letter-spacing: 0.16em; color: var(--cyan); margin-bottom: 8px; }
+.guar-card.gold .guar-tag { color: var(--gold); }
+.guar-card.emerald .guar-tag { color: var(--emerald); }
+.guar-text { font-size: 13px; color: rgba(255,255,255,0.95); line-height: 1.55; }
+@media (max-width: 720px) { .guarantee-grid { grid-template-columns: 1fr; } }
+
+/* ───────── REVENUE CALCULATOR ───────── */
+.calc {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+  color: var(--white); border-radius: var(--r); padding: 36px;
+  box-shadow: var(--shadow-lg); margin-bottom: 30px;
+}
+.calc h3 {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 24px; margin-bottom: 6px;
+}
+.calc-sub { color: #cfe6f5; font-size: 14px; margin-bottom: 28px; }
+.calc-grid {
+  display: grid; grid-template-columns: 2fr 1fr; gap: 36px; align-items: center;
+}
+.slider-row { margin-bottom: 18px; }
+.slider-lbl {
+  display: flex; justify-content: space-between; font-size: 12px;
+  color: #9fb8cc; letter-spacing: 0.06em; margin-bottom: 8px;
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  text-transform: uppercase;
+}
+.slider-val { color: var(--cyan); font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; }
+input[type=range] {
+  width: 100%; -webkit-appearance: none; height: 6px;
+  background: rgba(255,255,255,0.1); border-radius: 999px; outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 22px; height: 22px;
+  background: var(--cyan); border-radius: 999px; cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,168,225,0.5);
+  transition: transform 0.18s;
+}
+input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.15); }
+input[type=range]::-moz-range-thumb {
+  width: 22px; height: 22px; background: var(--cyan); border-radius: 999px;
+  cursor: pointer; border: 0;
+}
+.calc-result {
+  text-align: center; padding: 28px; border-radius: var(--r);
+  background: rgba(0,168,225,0.08); border: 1px solid rgba(0,168,225,0.25);
+}
+.calc-mrr {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 44px; color: var(--cyan); line-height: 1;
+  letter-spacing: -0.02em; transition: color 0.2s;
+}
+.calc-mrr-lbl { font-size: 11px; color: #cfe6f5; margin-top: 6px; letter-spacing: 0.14em; font-family: 'Work Sans', sans-serif; font-weight: 600; }
+.calc-arr { font-size: 14px; color: rgba(255,255,255,0.85); margin-top: 14px; }
+.calc-arr-num { color: var(--cyan); font-weight: 700; }
+@media (max-width: 720px) {
+  .calc-grid { grid-template-columns: 1fr; }
+  .calc-mrr { font-size: 32px; }
+}
+
+/* ───────── TIMELINE ───────── */
+.timeline {
+  position: relative; padding: 30px 0 50px; overflow-x: auto;
+}
+.tl-track {
+  position: relative; height: 4px; background: var(--gray-line);
+  margin: 50px 30px 30px; border-radius: 999px;
+  min-width: 700px;
+}
+.tl-marker {
+  position: absolute; top: 50%; transform: translate(-50%, -50%);
+  width: 14px; height: 14px; background: var(--cyan); border-radius: 999px;
+  border: 3px solid var(--white); box-shadow: 0 0 0 1px var(--cyan);
+}
+.tl-marker.gold { background: var(--gold); box-shadow: 0 0 0 1px var(--gold); }
+.tl-marker.emerald { background: var(--emerald); box-shadow: 0 0 0 1px var(--emerald); }
+.tl-marker.plum { background: var(--plum); box-shadow: 0 0 0 1px var(--plum); }
+.tl-marker.coral { background: var(--coral); box-shadow: 0 0 0 1px var(--coral); }
+.tl-marker.navy { background: var(--navy); box-shadow: 0 0 0 1px var(--navy); }
+.tl-label {
+  position: absolute; top: 22px; left: 50%; transform: translateX(-50%);
+  font-size: 11px; color: var(--ink); white-space: nowrap;
+  font-weight: 500;
+}
+.tl-label.below { top: auto; bottom: 22px; color: var(--gray-txt); }
+.tl-month {
+  position: absolute; top: 8px; transform: translateX(-50%);
+  font-size: 10px; color: var(--gray-muted); font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+.rev-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 30px; }
+.rev-card {
+  background: var(--white); border: 1px solid var(--gray-line);
+  border-radius: var(--r); padding: 22px;
+  border-top: 4px solid var(--cyan);
+  transition: all 0.2s;
+}
+.rev-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.rev-card.p2 { border-top-color: var(--navy-soft); }
+.rev-card.p3 { border-top-color: var(--navy); }
+.rev-card.p4 { border-top-color: var(--navy-deep); }
+.rev-name {
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.14em; color: var(--cyan); margin-bottom: 8px;
+}
+.rev-card.p2 .rev-name { color: var(--navy-soft); }
+.rev-card.p3 .rev-name { color: var(--navy); }
+.rev-card.p4 .rev-name { color: var(--navy-deep); }
+.rev-mrr {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 24px; color: var(--navy); letter-spacing: -0.01em; margin-bottom: 4px;
+}
+.rev-formula { font-size: 12px; color: var(--gray-txt); }
+@media (max-width: 900px) { .rev-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ───────── 7-DAY CHECKLIST ───────── */
+.day7 { display: grid; grid-template-columns: 1fr 1.5fr; gap: 36px; }
+.day7-left {
+  background: var(--navy); color: var(--white);
+  padding: 36px; border-radius: var(--r); position: relative; overflow: hidden;
+}
+.day7-left::after {
+  content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 30%;
+  background: var(--navy-deep);
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
+.day7-left h3 {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: 32px; line-height: 1.1; margin-bottom: 18px; position: relative; z-index: 1;
+  letter-spacing: -0.02em;
+}
+.day7-promise {
+  background: var(--cyan); color: var(--white);
+  padding: 18px 22px; border-radius: var(--r); position: relative; z-index: 1;
+  margin-top: 24px;
+}
+.dp-tag { font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 10px; letter-spacing: 0.16em; opacity: 0.85; margin-bottom: 6px; }
+.dp-text { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; }
+.day7-list { display: flex; flex-direction: column; gap: 10px; }
+.day-item {
+  display: grid; grid-template-columns: 70px 1fr; gap: 14px; align-items: center;
+  background: var(--white); padding: 16px 18px; border-radius: var(--r-sm);
+  border: 1px solid var(--gray-line);
+  transition: all 0.2s;
+}
+.day-item:hover { transform: translateX(4px); box-shadow: var(--shadow); }
+.day-num {
+  background: var(--cyan); color: var(--white);
+  font-family: 'Work Sans', sans-serif; font-weight: 700;
+  font-size: 11px; letter-spacing: 0.12em;
+  padding: 8px 0; text-align: center; border-radius: var(--r-sm);
+}
+.day-item.gold .day-num { background: var(--gold); }
+.day-item.emerald .day-num { background: var(--emerald); }
+.day-item.plum .day-num { background: var(--plum); }
+.day-task { font-size: 13.5px; color: var(--ink); line-height: 1.5; }
+@media (max-width: 900px) { .day7 { grid-template-columns: 1fr; } }
+
+/* ───────── EMAIL CAPTURE ───────── */
+.email-section {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 50%, var(--navy) 100%);
+  color: var(--white); padding: 80px 24px; position: relative; overflow: hidden;
+}
+.email-section::before {
+  content: ''; position: absolute; top: -50px; right: -50px;
+  width: 300px; height: 300px; border-radius: 999px;
+  background: radial-gradient(circle, rgba(0,168,225,0.15), transparent 70%);
+  pointer-events: none;
+}
+.email-inner {
+  max-width: 720px; margin: 0 auto; text-align: center; position: relative; z-index: 1;
+}
+.email-eyebrow {
+  display: inline-block; padding: 4px 0 4px 14px;
+  border-left: 3px solid var(--cyan);
+  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--cyan); margin-bottom: 14px;
+}
+.email-section h2 {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: clamp(28px, 4vw, 42px); line-height: 1.1; margin-bottom: 14px;
+  letter-spacing: -0.015em;
+}
+.email-section p { color: #cfe6f5; font-size: 16px; margin-bottom: 28px; line-height: 1.55; }
+.email-form {
+  display: flex; gap: 10px; max-width: 520px; margin: 0 auto; flex-wrap: wrap;
+  justify-content: center;
+}
+.email-form input[type=email] {
+  flex: 1; min-width: 280px;
+  padding: 14px 18px; border-radius: 6px; border: 0;
+  font-family: 'Inter', sans-serif; font-size: 15px;
+  background: rgba(255,255,255,0.1); color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.2);
+  outline: none; transition: all 0.2s;
+}
+.email-form input[type=email]::placeholder { color: rgba(255,255,255,0.5); }
+.email-form input[type=email]:focus {
+  border-color: var(--cyan); background: rgba(255,255,255,0.15);
+}
+.email-form button {
+  padding: 14px 28px; border-radius: 6px; border: 0;
+  background: var(--cyan); color: var(--white);
+  font-family: 'Work Sans', sans-serif; font-weight: 700;
+  font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+  cursor: pointer; transition: all 0.18s;
+}
+.email-form button:hover { background: var(--cyan-deep); transform: translateY(-1px); }
+.email-form .ok-msg, .email-form .err-msg {
+  width: 100%; font-size: 14px; margin-top: 10px;
+}
+.email-form .ok-msg { color: var(--cyan); }
+.email-form .err-msg { color: var(--coral); }
+.email-fine { font-size: 11px; color: rgba(255,255,255,0.5); margin-top: 16px; letter-spacing: 0.04em; }
+
+/* ───────── PROMISE BAND ───────── */
+.promise {
+  background: var(--navy-deep); color: var(--white);
+  padding: 36px; border-radius: var(--r); margin-top: 30px;
+  border-top: 4px solid var(--cyan);
+}
+.promise-tag { font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.18em; color: var(--cyan); margin-bottom: 8px; }
+.promise-text { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 24px; margin-bottom: 6px; line-height: 1.2; }
+.promise-sub { color: #bcd6e9; font-size: 14px; line-height: 1.55; }
+
+/* ───────── FOOTER ───────── */
+.footer {
+  background: var(--navy-deep); color: var(--white); padding: 40px 24px;
+  text-align: center; font-size: 13px; line-height: 1.7;
+}
+.footer a { color: var(--cyan); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+.footer-meta { color: var(--gray-muted); font-size: 11px; margin-top: 12px; letter-spacing: 0.04em; }
+
+/* ───────── REVEAL ANIMATION ───────── */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s, transform 0.7s; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+
+/* ───────── UTIL ───────── */
+.scroll-target { scroll-margin-top: 80px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <span class="nav-logo">EB</span>
+      <span>The Bogen Method</span>
+    </a>
+    <div class="nav-links">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#flywheel">Flywheel</a>
+      <a href="#audience">Audience</a>
+      <a href="#channels">Channels</a>
+      <a href="#funnel">Funnel</a>
+      <a href="#magnets">Magnets</a>
+      <a href="#plan">90-Day Plan</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#launch">7-Day Launch</a>
+      <a href="#join" class="nav-cta">Join Founding 50</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">The Edmund Bogen Team · Bogen.ai</span>
+    <h1>The Bogen Method<br>Lead Generation Plan</h1>
+    <p class="hero-sub">How to fill The Founding 50 — and sell out all four phases to 200 paid members.</p>
+
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">200</div>
+        <div class="hero-stat-lbl">Members</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">4</div>
+        <div class="hero-stat-lbl">Phases</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">$497–$797</div>
+        <div class="hero-stat-lbl">Monthly Range</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">3 Rooms</div>
+        <div class="hero-stat-lbl">Learn · Apply · Install</div>
+      </div>
+    </div>
+
+    <div class="hero-cta-row">
+      <a href="#join" class="btn btn-cyan">Lock The Founding Rate</a>
+      <a href="Bogen_Method_Lead_Generation_Plan.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download The PDF</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ DASHBOARD + PHASE COUNTER ═══════════════ -->
+<section class="section scroll-target" id="dashboard">
+  <div class="section-inner">
+    <span class="section-eyebrow">Executive Dashboard</span>
+    <h2>The Sellout Math</h2>
+    <p class="section-sub">Every member added moves price up. Every phase closed compounds urgency. Watch the live counter — and lock the rate before it lifts.</p>
+
+    <!-- Phase counter -->
+    <div class="phase-counter reveal">
+      <div class="phase-counter-grid">
+        <div>
+          <div class="pc-eyebrow">Live Phase Counter</div>
+          <div class="pc-title" id="pcTitle">Phase 1 · Founding 50 — open now</div>
+          <div class="pc-sub" id="pcSub">Locked rate: $497/mo for the life of your membership.</div>
+          <div class="pc-bar-track"><div class="pc-bar-fill" id="pcBar" style="width: 0%"></div></div>
+          <div class="pc-meta">
+            <span id="pcMeta">0 of 50 members · 50 spots left</span>
+            <span id="pcDeadline">Closes May 31 or at 50 members</span>
+          </div>
+        </div>
+        <div class="pc-numwrap">
+          <div class="pc-num" id="pcNum">0</div>
+          <div class="pc-num-sub">FOUNDING MEMBERS · OF 50</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KPI cards -->
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-lbl">Members Needed</div>
+        <div class="kpi-big">200</div>
+        <div class="kpi-sub">to close T1 forever</div>
+      </div>
+      <div class="kpi-card navy">
+        <div class="kpi-lbl">Founding Rate</div>
+        <div class="kpi-big">$497/mo</div>
+        <div class="kpi-sub">locked for life of membership</div>
+      </div>
+      <div class="kpi-card gold">
+        <div class="kpi-lbl">Price Lift</div>
+        <div class="kpi-big">+$300</div>
+        <div class="kpi-sub">$497 → $797 across phases</div>
+      </div>
+      <div class="kpi-card coral">
+        <div class="kpi-lbl">Deadline</div>
+        <div class="kpi-big">May 31</div>
+        <div class="kpi-sub">Founding Member quote slot</div>
+      </div>
+    </div>
+
+    <!-- Phase ladder -->
+    <div class="ladder">
+      <div class="ladder-row">
+        <div class="ladder-bar p1">
+          <span class="ladder-name">Phase 1 · Founding 50<span class="ladder-chip">OPEN NOW</span></span>
+          <span class="ladder-price">$497/mo</span>
+        </div>
+        <span class="ladder-meta">Members 1–50</span>
+      </div>
+      <div class="ladder-row">
+        <div class="ladder-bar p2">
+          <span class="ladder-name">Phase 2 · Next 50</span>
+          <span class="ladder-price">$597/mo</span>
+        </div>
+        <span class="ladder-meta">Members 51–100</span>
+      </div>
+      <div class="ladder-row">
+        <div class="ladder-bar p3">
+          <span class="ladder-name">Phase 3 · Next 50</span>
+          <span class="ladder-price">$697/mo</span>
+        </div>
+        <span class="ladder-meta">Members 101–150</span>
+      </div>
+      <div class="ladder-row">
+        <div class="ladder-bar p4">
+          <span class="ladder-name">Phase 4 · Final 50</span>
+          <span class="ladder-price">$797/mo</span>
+        </div>
+        <span class="ladder-meta">Members 151–200</span>
+      </div>
+    </div>
+
+    <div class="promise">
+      <div class="promise-tag">THE PROMISE</div>
+      <div class="promise-text">We don't strategize. We install.</div>
+      <div class="promise-sub">Members lock the rate they join at — for as long as their membership stays active.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FLYWHEEL ═══════════════ -->
+<section class="section alt scroll-target" id="flywheel">
+  <div class="section-inner">
+    <span class="section-eyebrow">Strategy</span>
+    <h2>The Lead-Gen Flywheel</h2>
+    <p class="section-sub">Five forces that compound — each turn lowers the cost of the next member.</p>
+
+    <div class="flywheel">
+      <div class="flywheel-svg-wrap">
+        <svg viewBox="0 0 400 400" width="100%" style="max-width: 480px; display:block; margin: 0 auto;" aria-label="The Bogen Flywheel">
+          <!-- outer ring -->
+          <circle cx="200" cy="200" r="150" fill="none" stroke="#e8e8e8" stroke-width="1.5"/>
+          <!-- spokes -->
+          <g stroke="#e8e8e8" stroke-width="0.8">
+            <line x1="200" y1="200" x2="200" y2="50"/>
+            <line x1="200" y1="200" x2="343" y2="154"/>
+            <line x1="200" y1="200" x2="288" y2="343"/>
+            <line x1="200" y1="200" x2="112" y2="343"/>
+            <line x1="200" y1="200" x2="57" y2="154"/>
+          </g>
+          <!-- hub -->
+          <circle cx="200" cy="200" r="62" fill="#1a3e5c"/>
+          <text x="200" y="190" text-anchor="middle" fill="#00a8e1" font-family="Work Sans, sans-serif" font-weight="600" font-size="11" letter-spacing="1.5">THE BOGEN</text>
+          <text x="200" y="208" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">FLYWHEEL</text>
+          <text x="200" y="228" text-anchor="middle" fill="#00a8e1" font-size="20">↻</text>
+          <!-- nodes -->
+          <g>
+            <circle cx="200" cy="50" r="28" fill="#00a8e1"/>
+            <text x="200" y="56" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="20">1</text>
+            <text x="200" y="22" text-anchor="middle" fill="#1a3e5c" font-family="Work Sans, sans-serif" font-weight="600" font-size="12" letter-spacing="1">CONTENT</text>
+          </g>
+          <g>
+            <circle cx="343" cy="154" r="28" fill="#e8b04b"/>
+            <text x="343" y="160" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="20">2</text>
+            <text x="343" y="118" text-anchor="middle" fill="#1a3e5c" font-family="Work Sans, sans-serif" font-weight="600" font-size="12" letter-spacing="1">CAPTURE</text>
+          </g>
+          <g>
+            <circle cx="288" cy="343" r="28" fill="#2fa37a"/>
+            <text x="288" y="349" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="20">3</text>
+            <text x="288" y="385" text-anchor="middle" fill="#1a3e5c" font-family="Work Sans, sans-serif" font-weight="600" font-size="12" letter-spacing="1">CONVERT</text>
+          </g>
+          <g>
+            <circle cx="112" cy="343" r="28" fill="#7a5fb5"/>
+            <text x="112" y="349" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="20">4</text>
+            <text x="112" y="385" text-anchor="middle" fill="#1a3e5c" font-family="Work Sans, sans-serif" font-weight="600" font-size="12" letter-spacing="1">COMMUNITY</text>
+          </g>
+          <g>
+            <circle cx="57" cy="154" r="28" fill="#e96a5b"/>
+            <text x="57" y="160" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="20">5</text>
+            <text x="57" y="118" text-anchor="middle" fill="#1a3e5c" font-family="Work Sans, sans-serif" font-weight="600" font-size="12" letter-spacing="1">COMPOUND</text>
+          </g>
+        </svg>
+      </div>
+      <div class="flywheel-list">
+        <div class="fw-item"><span class="fw-num">1.</span><span class="fw-name">Content</span><div class="fw-desc">Edmund posts builds, not theory. Each post is a screen recording of an automation he just shipped.</div></div>
+        <div class="fw-item gold"><span class="fw-num">2.</span><span class="fw-name">Capture</span><div class="fw-desc">A free tool (CMA Mini, Listing Description Lite) trades email for a working AI workflow.</div></div>
+        <div class="fw-item emerald"><span class="fw-num">3.</span><span class="fw-name">Convert</span><div class="fw-desc">Founding 50 checkout is one-click. No call. Self-serve at $497.</div></div>
+        <div class="fw-item plum"><span class="fw-num">4.</span><span class="fw-name">Community</span><div class="fw-desc">Members ship → drop wins in Slack → wins become quotes → quotes power the next post.</div></div>
+        <div class="fw-item coral"><span class="fw-num">5.</span><span class="fw-name">Compound</span><div class="fw-desc">As Phase 1 fills, Phase 2 opens at +$100. Loss aversion drives the next 50.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ICP / AUDIENCE ═══════════════ -->
+<section class="section scroll-target" id="audience">
+  <div class="section-inner">
+    <span class="section-eyebrow">Audience</span>
+    <h2>Who You're Selling To</h2>
+    <p class="section-sub">Three rooms, three buyers. Same pain, different velocity.</p>
+
+    <div class="persona-grid">
+      <div class="persona-card">
+        <div class="persona-tag">Room One · Learn</div>
+        <div class="persona-body">
+          <div class="persona-title">The Self-Starter Realtor</div>
+          <div class="persona-tier">$497/mo</div>
+          <div class="persona-section"><div class="persona-h">Pains</div><ul class="persona-list"><li>Folder of unused prompts</li><li>Watches AI YouTube on Saturdays</li><li>Hasn't shipped a single workflow</li></ul></div>
+          <div class="persona-section want"><div class="persona-h">Wants</div><ul class="persona-list"><li>A first deployable build in 30 days</li><li>A room that holds them accountable</li><li>Founding 50 lock-in rate</li></ul></div>
+          <div class="persona-section ch"><div class="persona-h">Best Channels</div><ul class="persona-list"><li>Instagram, Facebook Group, YouTube Shorts, Email</li></ul></div>
+        </div>
+      </div>
+      <div class="persona-card r2">
+        <div class="persona-tag">Room Two · Apply</div>
+        <div class="persona-body">
+          <div class="persona-title">The Operator Realtor</div>
+          <div class="persona-tier">$2,500/mo</div>
+          <div class="persona-section"><div class="persona-h">Pains</div><ul class="persona-list"><li>Already using ChatGPT, hitting the ceiling</li><li>Wants custom GPT trained on their voice</li><li>Needs hot-seat coaching, not videos</li></ul></div>
+          <div class="persona-section want"><div class="persona-h">Wants</div><ul class="persona-list"><li>Listing-to-launch pipeline</li><li>Pipeline intelligence dashboard</li><li>Direct Slack to Edmund</li></ul></div>
+          <div class="persona-section ch"><div class="persona-h">Best Channels</div><ul class="persona-list"><li>LinkedIn, X.com, Podcast, Referrals from Mastermind</li></ul></div>
+        </div>
+      </div>
+      <div class="persona-card r3">
+        <div class="persona-tag">Room Three · Install</div>
+        <div class="persona-body">
+          <div class="persona-title">The Brokerage Owner</div>
+          <div class="persona-tier">$10K+/mo</div>
+          <div class="persona-section"><div class="persona-h">Pains</div><ul class="persona-list"><li>Agents inconsistent, can't scale output</li><li>$1M+ revenue, no AI ops layer</li><li>Sees competitors pulling ahead</li></ul></div>
+          <div class="persona-section want"><div class="persona-h">Wants</div><ul class="persona-list"><li>Brokerage-wide listing engine</li><li>Lead routing &amp; nurture automation</li><li>12-month roadmap delivered in 30 days</li></ul></div>
+          <div class="persona-section ch"><div class="persona-h">Best Channels</div><ul class="persona-list"><li>LinkedIn DMs, speaking events, podcast guests, warm intros</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="promise">
+      <div class="promise-tag">MESSAGE-MARKET FIT</div>
+      <div class="promise-text">"You don't need another video library. You need to ship one workflow this month — and the next, and the next."</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CHANNEL MATRIX ═══════════════ -->
+<section class="section alt scroll-target" id="channels">
+  <div class="section-inner">
+    <span class="section-eyebrow">Channels</span>
+    <h2>Channel Mix Matrix</h2>
+    <p class="section-sub">Where to spend energy in the next 90 days. Effort vs. expected ROI by room.</p>
+
+    <div class="channel-table">
+      <div class="channel-row head">
+        <span>Channel</span><span>Effort</span><span>Room 1</span><span>Room 2</span><span>Room 3</span><span>Playbook Note</span>
+      </div>
+      <div class="channel-row"><span>Instagram (Reels + Carousels)</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-num">5</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">3</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">1</span></span><span class="channel-note">Daily build clips — anchor channel</span></div>
+      <div class="channel-row"><span>YouTube (Long-form builds)</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill"></span><span class="roi-num">4</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-num">5</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">3</span></span><span class="channel-note">SEO compounds — Edmund's POV</span></div>
+      <div class="channel-row"><span>YouTube Shorts</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-num">5</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">3</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">1</span></span><span class="channel-note">Repurpose Reels — zero extra work</span></div>
+      <div class="channel-row"><span>LinkedIn (Edmund's profile)</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">2</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-num">5</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-num">5</span></span><span class="channel-note">Best for Coaching+ and DWY</span></div>
+      <div class="channel-row"><span>Facebook Group (Mastermind)</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-num">5</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">3</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">1</span></span><span class="channel-note">Owned community — converts</span></div>
+      <div class="channel-row"><span>Facebook Page (paid ads)</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill"></span><span class="roi-num">4</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">2</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">1</span></span><span class="channel-note">Retarget warm video viewers</span></div>
+      <div class="channel-row"><span>TikTok</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill"></span><span class="roi-num">4</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">2</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">1</span></span><span class="channel-note">Younger realtor cohort</span></div>
+      <div class="channel-row"><span>X.com</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">2</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill"></span><span class="roi-num">4</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">3</span></span><span class="channel-note">Tech-fluent operators hang here</span></div>
+      <div class="channel-row"><span>Podcast (Guest + Host)</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">3</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-num">5</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-num">5</span></span><span class="channel-note">Trust at scale — DWY gold</span></div>
+      <div class="channel-row"><span>Email Newsletter (weekly)</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-num">5</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill"></span><span class="roi-num">4</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">3</span></span><span class="channel-note">Owned audience — converts</span></div>
+      <div class="channel-row"><span>WhatsApp Broadcasts</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill"></span><span class="roi-num">4</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">3</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-pill"></span><span class="roi-num">1</span></span><span class="channel-note">Personal touch for Founding push</span></div>
+      <div class="channel-row"><span>Referrals (Member-get-Member)</span><span class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></span><span class="roi-pills"><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-pill r1 on"></span><span class="roi-num">5</span></span><span class="roi-pills"><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-pill r2 on"></span><span class="roi-num">5</span></span><span class="roi-pills"><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill r3 on"></span><span class="roi-pill"></span><span class="roi-num">4</span></span><span class="roi-pills"><span class="channel-note">Highest-converting channel</span></span></div>
+    </div>
+
+    <div class="promise" style="margin-top: 26px;">
+      <div class="promise-tag">READING THIS MATRIX</div>
+      <div class="promise-text" style="font-size: 18px;">Effort = filled dots out of 5. ROI per room = 1 (low) → 5 (high).</div>
+      <div class="promise-sub">Pick high-ROI / low-effort channels first. Repurposing across them is your unfair advantage.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FUNNEL ═══════════════ -->
+<section class="section scroll-target" id="funnel">
+  <div class="section-inner">
+    <span class="section-eyebrow">Funnel</span>
+    <h2>From Stranger → Founding Member</h2>
+    <p class="section-sub">Realistic conversion benchmarks for a new info-product funnel in luxury real estate AI.</p>
+
+    <div class="funnel-grid">
+      <div class="funnel-stages">
+        <div class="funnel-bar" style="background: var(--cyan); width: 100%;">
+          <div class="fb-content"><div class="fb-name">Reach</div><div class="fb-sub">monthly impressions across IG, YT, LI, TT</div></div>
+          <div class="fb-count">120,000</div>
+        </div>
+        <div class="funnel-bar" style="background: var(--navy-soft); width: 78%;">
+          <div class="fb-content"><div class="fb-name">Engaged</div><div class="fb-sub">10% of reach watches &gt;50% of a build clip</div></div>
+          <div class="fb-count">12,000</div>
+        </div>
+        <div class="funnel-bar" style="background: var(--navy); width: 60%;">
+          <div class="fb-content"><div class="fb-name">Lead</div><div class="fb-sub">15% opt in for free tool / email list</div></div>
+          <div class="fb-count">1,800</div>
+        </div>
+        <div class="funnel-bar" style="background: var(--gold); width: 44%;">
+          <div class="fb-content"><div class="fb-name">Tripwire / MQL</div><div class="fb-sub">20% engage with nurture or low-ticket</div></div>
+          <div class="fb-count">360</div>
+        </div>
+        <div class="funnel-bar" style="background: var(--cyan-deep); width: 32%;">
+          <div class="fb-content"><div class="fb-name">Founding Member</div><div class="fb-sub">~14% of MQLs convert to $497/mo</div></div>
+          <div class="fb-count">50</div>
+        </div>
+      </div>
+      <div class="lever-list">
+        <div class="lever-item"><h4>Hook (first 3s)</h4><p>Show a workflow shipping. Skip intros entirely.</p></div>
+        <div class="lever-item"><h4>Proof</h4><p>Member quote + screen recording &gt; testimonial card.</p></div>
+        <div class="lever-item"><h4>Lead magnet</h4><p>Working tool, not a PDF. CMA Mini does the job.</p></div>
+        <div class="lever-item"><h4>Tripwire</h4><p>$27 'Listing Description Generator' as path to $497.</p></div>
+        <div class="lever-item"><h4>Urgency</h4><p>Live phase counter + Founding 50 deadline.</p></div>
+        <div class="lever-item"><h4>Guarantee</h4><p>Deploy in 30 days or next month free — repeat everywhere.</p></div>
+      </div>
+    </div>
+
+    <div class="promise" style="margin-top: 26px;">
+      <div class="promise-tag">THE NUMBER TO BEAT</div>
+      <div class="promise-text" style="font-size: 17px;">Hit ~120K monthly reach across owned channels and the Founding 50 fills inside 60–90 days at current benchmarks.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ LEAD MAGNET LADDER ═══════════════ -->
+<section class="section alt scroll-target" id="magnets">
+  <div class="section-inner">
+    <span class="section-eyebrow">Offers</span>
+    <h2>The Lead Magnet Ladder</h2>
+    <p class="section-sub">A staircase of value — each free tool warms the buyer up to the $497 commitment, then beyond.</p>
+
+    <div class="lead-ladder">
+      <div class="lm-rung"><div class="lm-bar r0"><div class="lm-tag">RUNG 0 · FREE</div><div class="lm-name">CMA Mini</div></div><span class="lm-arrow">→</span><div class="lm-desc">Working ChatGPT prompt that turns 5 comps into a basic CMA. Email gate.</div></div>
+      <div class="lm-rung"><div class="lm-bar r1"><div class="lm-tag">RUNG 1 · FREE</div><div class="lm-name">Listing Description Lite</div></div><span class="lm-arrow">→</span><div class="lm-desc">Custom GPT — paste MLS sheet, get branded description. Email opt-in.</div></div>
+      <div class="lm-rung"><div class="lm-bar r2"><div class="lm-tag">RUNG 2 · FREE EVENT</div><div class="lm-name">9-Minute CMA Workshop</div></div><span class="lm-arrow">→</span><div class="lm-desc">Live 45-min build. Quarterly. Pitches Founding 50 at the end.</div></div>
+      <div class="lm-rung"><div class="lm-bar r3"><div class="lm-tag">RUNG 3 · $27</div><div class="lm-name">Listing-to-Launch Starter</div></div><span class="lm-arrow">→</span><div class="lm-desc">Tripwire. 3 prompts + 1 Loom. Filters tire-kickers from operators.</div></div>
+      <div class="lm-rung"><div class="lm-bar r4"><div class="lm-tag">RUNG 4 · $497/mo</div><div class="lm-name">Mastermind (Founding 50)</div></div><span class="lm-arrow">→</span><div class="lm-desc">Self-serve. Builds → community → 30-day deploy guarantee.</div></div>
+      <div class="lm-rung"><div class="lm-bar r5"><div class="lm-tag">RUNG 5 · $2,500/mo</div><div class="lm-name">Coaching+ Cohort</div></div><span class="lm-arrow">→</span><div class="lm-desc">Application required. Custom GPT trained on the operator's voice.</div></div>
+      <div class="lm-rung"><div class="lm-bar r6"><div class="lm-tag">RUNG 6 · $10K+/mo</div><div class="lm-name">Done-With-You Partnership</div></div><span class="lm-arrow">→</span><div class="lm-desc">Discovery call required. Brokerage-wide install.</div></div>
+    </div>
+
+    <div class="promise" style="margin-top: 30px;">
+      <div class="promise-tag">RUNG DESIGN RULE</div>
+      <div class="promise-text" style="font-size: 17px;">Each rung must DO something — not just teach. A working tool always beats a PDF.</div>
+      <div class="promise-sub">Free → $27 → $497 → $2,500 → $10K. Each step roughly 5–10× the prior commitment.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CONTENT ENGINE ═══════════════ -->
+<section class="section scroll-target" id="content">
+  <div class="section-inner">
+    <span class="section-eyebrow">Content</span>
+    <h2>The Content Engine</h2>
+    <p class="section-sub">One build per week → one long-form asset → fifteen atomic pieces. The Bogen flywheel.</p>
+
+    <div class="pillar-table" style="margin-top: 14px;">
+      <div class="pt-row head">
+        <div class="pt-cell">Pillar</div>
+        <div class="pt-cell">Video</div>
+        <div class="pt-cell">Image / Carousel</div>
+        <div class="pt-cell">Text / Thread</div>
+      </div>
+      <div class="pt-row">
+        <div class="pt-pillar">Builds</div>
+        <div class="pt-cell">Loom: 9-min CMA build</div>
+        <div class="pt-cell">Reel: before/after of listing description</div>
+        <div class="pt-cell">Carousel: 5-step prompt teardown</div>
+      </div>
+      <div class="pt-row proof">
+        <div class="pt-pillar">Proof</div>
+        <div class="pt-cell">Member screen-recording</div>
+        <div class="pt-cell">DM screenshot of result</div>
+        <div class="pt-cell">Quote card with build photo</div>
+      </div>
+      <div class="pt-row method">
+        <div class="pt-pillar">Method</div>
+        <div class="pt-cell">YouTube: 'The Bogen Method' explainer</div>
+        <div class="pt-cell">Carousel: Why deploy beats theory</div>
+        <div class="pt-cell">X thread: AI ladder at $5M brokerage</div>
+      </div>
+    </div>
+
+    <div class="promise" style="margin-top: 26px;">
+      <div class="promise-tag">THE 3-2-1 RULE</div>
+      <div class="promise-text" style="font-size: 18px;">3 atomic posts/day · 2 long-form assets/week · 1 live build with Edmund/week.</div>
+      <div class="promise-sub">Cadence is the moat. Most realtors quit at week 3.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ WEEKLY RHYTHM ═══════════════ -->
+<section class="section alt scroll-target" id="rhythm">
+  <div class="section-inner">
+    <span class="section-eyebrow">Cadence</span>
+    <h2>Your Weekly Operating Rhythm</h2>
+    <p class="section-sub">A repeatable 7-day flywheel. Time-blocked. Delegate-able.</p>
+
+    <div class="week">
+      <div class="day-col">
+        <div class="day-head">MON</div>
+        <div class="day-block"><div class="dt">9–11a</div><div class="dl">Build session</div></div>
+        <div class="day-block gold"><div class="dt">12p</div><div class="dl">IG/TT post: build clip</div></div>
+        <div class="day-block"><div class="dt">4p</div><div class="dl">LinkedIn long-form</div></div>
+      </div>
+      <div class="day-col">
+        <div class="day-head">TUE</div>
+        <div class="day-block"><div class="dt">10a–12p</div><div class="dl">YouTube record</div></div>
+        <div class="day-block gold"><div class="dt">1p</div><div class="dl">X.com thread: build teardown</div></div>
+        <div class="day-block plum"><div class="dt">5p</div><div class="dl">Email pre-tease</div></div>
+      </div>
+      <div class="day-col">
+        <div class="day-head">WED</div>
+        <div class="day-block emerald"><div class="dt">10–11:30a</div><div class="dl">Coaching+ cohort call</div></div>
+        <div class="day-block gold"><div class="dt">2p</div><div class="dl">Reel: member quote</div></div>
+        <div class="day-block"><div class="dt">5p</div><div class="dl">Email newsletter SEND</div></div>
+      </div>
+      <div class="day-col">
+        <div class="day-head">THU</div>
+        <div class="day-block emerald"><div class="dt">12–1p</div><div class="dl">Mastermind group call</div></div>
+        <div class="day-block gold"><div class="dt">3p</div><div class="dl">IG carousel: method</div></div>
+        <div class="day-block coral"><div class="dt">5p</div><div class="dl">Podcast guest</div></div>
+      </div>
+      <div class="day-col">
+        <div class="day-head">FRI</div>
+        <div class="day-block coral"><div class="dt">9–11a</div><div class="dl">DWY discovery calls</div></div>
+        <div class="day-block plum"><div class="dt">all day</div><div class="dl">Slack daily presence</div></div>
+        <div class="day-block gold"><div class="dt">3p</div><div class="dl">Founding push DM</div></div>
+      </div>
+      <div class="day-col">
+        <div class="day-head">SAT</div>
+        <div class="day-block"><div class="dt">9a</div><div class="dl">YouTube publish</div></div>
+        <div class="day-block gold"><div class="dt">11a</div><div class="dl">Repurpose to Shorts</div></div>
+      </div>
+      <div class="day-col">
+        <div class="day-head">SUN</div>
+        <div class="day-block navy"><div class="dt">6p</div><div class="dl">Plan next week</div></div>
+        <div class="day-block navy"><div class="dt">7p</div><div class="dl">Review KPIs</div></div>
+      </div>
+    </div>
+
+    <div class="promise" style="margin-top: 26px;">
+      <div class="promise-tag">ENERGY ALLOCATION</div>
+      <div class="promise-text" style="font-size: 16px;">Build · Content · Coaching · Community · Sales · Plan</div>
+      <div class="promise-sub">Color-coded above. Time blocks are non-negotiable. Sunday night reset is sacred.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 30/60/90 PLAN ═══════════════ -->
+<section class="section scroll-target" id="plan">
+  <div class="section-inner">
+    <span class="section-eyebrow">Roadmap</span>
+    <h2>The 30 / 60 / 90 Day Plan</h2>
+    <p class="section-sub">Step-by-step. Each phase has one job. Don't skip phases.</p>
+
+    <div class="phase-grid">
+      <div class="phase-col">
+        <div class="phase-head">
+          <div class="phase-tag">DAYS 1–30</div>
+          <div class="phase-name">FOUNDATION</div>
+          <div class="phase-goal">Ship the offer. Get to 25 Founding Members.</div>
+        </div>
+        <div class="phase-body">
+          <ol>
+            <li>Lock landing page copy and live phase-counter widget.</li>
+            <li>Build CMA Mini lead magnet (custom GPT + email gate).</li>
+            <li>Publish 3 anchor YouTube videos covering the core builds.</li>
+            <li>Daily Reels for 30 days — every one shows a working build.</li>
+            <li>Personal DM outreach: 200 warm contacts inviting to Founding 50.</li>
+            <li>Send 4× weekly email sequence with phase counter + deadline.</li>
+            <li>Run 1 live '9-Minute CMA Workshop' and pitch Founding 50 at the end.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="phase-col fuel">
+        <div class="phase-head">
+          <div class="phase-tag">DAYS 31–60</div>
+          <div class="phase-name">FUEL</div>
+          <div class="phase-goal">Close Founding 50. Open Coaching+ pipeline.</div>
+        </div>
+        <div class="phase-body">
+          <ol>
+            <li>Member quote engine: collect a screen-recording quote each week.</li>
+            <li>Launch $27 Listing-to-Launch Starter as tripwire ad on FB + IG.</li>
+            <li>Begin paid ads — retarget warm video viewers at $75/day cap.</li>
+            <li>Open Coaching+ application form. First cohort = 8 members.</li>
+            <li>Podcast guest tour: 8 spots booked via LinkedIn + warm intros.</li>
+            <li>Repurpose every YouTube into 5 atomic posts (3-2-1 cadence).</li>
+            <li>Launch referral program: 1 month free for every paid referral.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="phase-col flywheel">
+        <div class="phase-head">
+          <div class="phase-tag">DAYS 61–90</div>
+          <div class="phase-name">FLYWHEEL</div>
+          <div class="phase-goal">Hit 100+ members. Sign first DWY.</div>
+        </div>
+        <div class="phase-body">
+          <ol>
+            <li>Hit Phase 2 (100 members) with member-driven proof posts.</li>
+            <li>Run a live 'State of Realtor AI' broadcast — pitch Coaching+ live.</li>
+            <li>Schedule 5 DWY discovery calls/week with brokerage owners.</li>
+            <li>Publish 90-day case study: 'How [Member] saved 12 hrs/week'.</li>
+            <li>Hire one Edmund's Mastermind ops lead to own onboarding.</li>
+            <li>Layer SEO: convert top 10 YouTube videos into long-form articles.</li>
+            <li>Plan Phase 3 launch: 2-day virtual Bogen Method intensive.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="promise" style="margin-top: 26px;">
+      <div class="promise-tag">DON'T SKIP PHASES</div>
+      <div class="promise-text" style="font-size: 17px;">Foundation builds the offer. Fuel proves it. Flywheel scales it.</div>
+      <div class="promise-sub">Skipping = leaks at every stage.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ KPI SCOREBOARD ═══════════════ -->
+<section class="section alt scroll-target" id="kpi">
+  <div class="section-inner">
+    <span class="section-eyebrow">Measurement</span>
+    <h2>The KPI Scoreboard</h2>
+    <p class="section-sub">What gets tracked gets shipped. Review weekly. Recalibrate monthly.</p>
+
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-lbl">Monthly Reach</div><div class="kpi-big">120K</div><div class="kpi-sub">+15% MoM target · Across IG, YT, LI, TT</div></div>
+      <div class="kpi-card navy"><div class="kpi-lbl">Email List</div><div class="kpi-big">5,000</div><div class="kpi-sub">+500/mo target · Owned audience</div></div>
+      <div class="kpi-card gold"><div class="kpi-lbl">MQL → Member</div><div class="kpi-big">14%</div><div class="kpi-sub">Target ≥ 12% · Email-to-paid ratio</div></div>
+      <div class="kpi-card emerald"><div class="kpi-lbl">Founding 50</div><div class="kpi-big">50/50</div><div class="kpi-sub">Closed in 60–90 days · Anchor goal</div></div>
+    </div>
+    <div class="kpi-grid" style="margin-top: 16px;">
+      <div class="kpi-card plum"><div class="kpi-lbl">MRR</div><div class="kpi-big">$24,850</div><div class="kpi-sub">@ 50 × $497 · Mastermind only</div></div>
+      <div class="kpi-card coral"><div class="kpi-lbl">Guarantee Claims</div><div class="kpi-big">&lt; 3%</div><div class="kpi-sub">Below = strong onboard · 30-day deploy</div></div>
+      <div class="kpi-card navy"><div class="kpi-lbl">Member Builds</div><div class="kpi-big">100%</div><div class="kpi-sub">Every member ships · Activation north star</div></div>
+      <div class="kpi-card"><div class="kpi-lbl">DWY Calls Booked</div><div class="kpi-big">20/mo</div><div class="kpi-sub">Top of premium funnel</div></div>
+    </div>
+
+    <div class="promise" style="margin-top: 26px;">
+      <div class="promise-tag">REVIEW CADENCE</div>
+      <div class="promise-text" style="font-size: 16px;">Weekly: reach + leads + builds. Monthly: MRR + claims + DWY pipeline. Quarterly: phase progress.</div>
+      <div class="promise-sub">Sunday night, 30 minutes. Non-negotiable.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TECH STACK ═══════════════ -->
+<section class="section scroll-target" id="stack">
+  <div class="section-inner">
+    <span class="section-eyebrow">Infrastructure</span>
+    <h2>The Tech Stack Map</h2>
+    <p class="section-sub">What runs the lead-gen machine — and how data flows from stranger to member.</p>
+
+    <div class="stack-list">
+      <div class="stack-row"><div class="stack-name">CAPTURE</div><div class="stack-tools">Landing pages (current GitHub site) · Lead magnet GPTs (CMA Mini, Listing Lite) · Stripe (Founding 50 checkout)</div></div>
+      <div class="stack-row nurture"><div class="stack-name">NURTURE</div><div class="stack-tools">ConvertKit / Beehiiv (email) · Manychat (IG DMs) · WhatsApp Broadcasts</div></div>
+      <div class="stack-row deliver"><div class="stack-name">DELIVER</div><div class="stack-tools">Skool or Circle (Mastermind community) · Notion (member workbooks) · Zoom (group + 1:1 calls)</div></div>
+      <div class="stack-row data"><div class="stack-name">DATA</div><div class="stack-tools">Supabase (member DB + phase counter) · Mixpanel/PostHog (funnel analytics) · Google Sheets (KPI scoreboard)</div></div>
+      <div class="stack-row team"><div class="stack-name">TEAM</div><div class="stack-tools">Slack (Edmund + members) · Loom (build reviews) · Calendly (DWY discovery)</div></div>
+    </div>
+
+    <div class="promise" style="margin-top: 26px;">
+      <div class="promise-tag">THE STACK PRINCIPLE</div>
+      <div class="promise-text" style="font-size: 17px;">If you do it twice, automate it. If you automate it twice, document it.</div>
+      <div class="promise-sub">Edmund's Mastermind is the case study — every workflow you install is also a member build.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ OBJECTIONS ═══════════════ -->
+<section class="section alt scroll-target" id="objections">
+  <div class="section-inner">
+    <span class="section-eyebrow">Sales</span>
+    <h2>The Objection Playbook</h2>
+    <p class="section-sub">The five objections Edmund hears most — and the lines that flip them.</p>
+
+    <div class="obj-grid">
+      <div class="obj-card"><div class="obj-tag">REFRAME · TIME</div><div class="obj-q">"I'm too busy to do another program."</div><div class="obj-a">That's exactly why this works. The Mastermind is the only program built to install — not teach. Your first build saves you ~6 hours/week. The program pays for itself by Week 3.</div></div>
+      <div class="obj-card gold"><div class="obj-tag">REFRAME · ROI</div><div class="obj-q">"I'll watch some YouTube first and try myself."</div><div class="obj-a">Most realtors who try alone have 'AI homework' for 6+ months and still haven't shipped a workflow. The Founding 50 rate is locked for life of membership — every month you wait is +$100 across phases.</div></div>
+      <div class="obj-card emerald"><div class="obj-tag">REFRAME · PRICE</div><div class="obj-q">"$497 is a lot per month."</div><div class="obj-a">One closed deal influenced by a faster CMA pays 12 months of membership. And if you don't deploy in 30 days, your next month is free. The risk is on us.</div></div>
+      <div class="obj-card plum"><div class="obj-tag">REFRAME · FIT</div><div class="obj-q">"I'm not technical enough."</div><div class="obj-a">If you can copy-paste a prompt and click 'Send', you can ship a Bogen build. Tech onboarding is included — a Bogen team member ships your first automation in your first 30 days.</div></div>
+      <div class="obj-card coral"><div class="obj-tag">REFRAME · SOCIAL PROOF</div><div class="obj-q">"I want to talk to a member first."</div><div class="obj-a">Open the community Slack right now — pick any member at random and DM them. We tell members to graduate. That's how confident we are.</div></div>
+    </div>
+
+    <div class="obj-close">
+      <div class="obj-close-tag">THE UNIVERSAL CLOSE</div>
+      <div class="obj-close-q">"Founding 50 closes at 50 members or May 31, whichever comes first. After that, the rate is gone forever."</div>
+      <div class="obj-close-note">Use this in every email, DM, and call wrap-up — until 50 is closed.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ RISK MAP ═══════════════ -->
+<section class="section scroll-target" id="risk">
+  <div class="section-inner">
+    <span class="section-eyebrow">Risk</span>
+    <h2>What Could Go Wrong — and the Counter-Move</h2>
+    <p class="section-sub">Pre-mortem the launch. Stress-test before you scale spend.</p>
+
+    <div class="risk-table">
+      <div class="risk-row head"><span>Risk</span><span>Severity</span><span>Counter-Move</span><span>Trend</span></div>
+      <div class="risk-row"><span>Founding 50 fills slowly</span><span><span class="severity-pill medium">MEDIUM</span></span><span>Personal DM outreach to top 200 warm contacts. Run a free Workshop Week 2.</span><span class="trend-bars"><span class="tb medium"></span><span class="tb medium"></span><span class="tb"></span></span></div>
+      <div class="risk-row"><span>Member doesn't deploy in 30d</span><span><span class="severity-pill high">HIGH</span></span><span>Tech onboarding in week 1 is mandatory. Bogen team ships their first automation FOR them.</span><span class="trend-bars"><span class="tb high"></span><span class="tb high"></span><span class="tb high"></span></span></div>
+      <div class="risk-row"><span>Refund / guarantee abuse</span><span><span class="severity-pill low">LOW</span></span><span>Guarantee = next month free, not refund. Limited financial exposure.</span><span class="trend-bars"><span class="tb low"></span><span class="tb"></span><span class="tb"></span></span></div>
+      <div class="risk-row"><span>Edmund becomes the bottleneck</span><span><span class="severity-pill high">HIGH</span></span><span>Eytan owns systems &amp; onboarding. Hire one ops lead by Day 60.</span><span class="trend-bars"><span class="tb high"></span><span class="tb high"></span><span class="tb high"></span></span></div>
+      <div class="risk-row"><span>Content cadence breaks at week 3</span><span><span class="severity-pill medium">MEDIUM</span></span><span>Batch-record YouTube. Use Mastermind members for atomic content.</span><span class="trend-bars"><span class="tb medium"></span><span class="tb medium"></span><span class="tb"></span></span></div>
+      <div class="risk-row"><span>DWY engagement underprices</span><span><span class="severity-pill low">LOW</span></span><span>Floor at $10K/mo, 12-month commit, 2.4% of revenue rule for $1M+ shops.</span><span class="trend-bars"><span class="tb low"></span><span class="tb"></span><span class="tb"></span></span></div>
+      <div class="risk-row"><span>Phase 2 momentum stalls</span><span><span class="severity-pill medium">MEDIUM</span></span><span>Re-launch event when crossing 50. New cohort starts → renewed urgency.</span><span class="trend-bars"><span class="tb medium"></span><span class="tb medium"></span><span class="tb"></span></span></div>
+      <div class="risk-row"><span>Coaching+ application volume low</span><span><span class="severity-pill low">LOW</span></span><span>Mastermind = pipeline. ~10% of Mastermind upgrades to C+ by Day 90.</span><span class="trend-bars"><span class="tb low"></span><span class="tb"></span><span class="tb"></span></span></div>
+    </div>
+
+    <div class="guarantee-grid">
+      <div class="guar-card"><div class="guar-tag">MASTERMIND GUARANTEE</div><div class="guar-text">Deploy your first AI workflow in 30 days, or your next month is free.</div></div>
+      <div class="guar-card gold"><div class="guar-tag">COACHING+ GUARANTEE</div><div class="guar-text">Ship one fully deployed AI workflow in 30 days with measurable savings, or next month free.</div></div>
+      <div class="guar-card emerald"><div class="guar-tag">DWY GUARANTEE</div><div class="guar-text">First measurable revenue impact OR documented operational savings in 90 days, or we extend at no charge.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CALCULATOR ═══════════════ -->
+<section class="section alt scroll-target" id="calculator">
+  <div class="section-inner">
+    <span class="section-eyebrow">Math</span>
+    <h2>Sellout Revenue Calculator</h2>
+    <p class="section-sub">Move the sliders to see what each phase contributes to monthly recurring revenue.</p>
+
+    <div class="calc">
+      <h3>What's the Bogen Method worth at each stage?</h3>
+      <div class="calc-sub">Mastermind only — Coaching+ and DWY layered on top.</div>
+
+      <div class="calc-grid">
+        <div>
+          <div class="slider-row">
+            <div class="slider-lbl"><span>Phase 1 · $497/mo</span><span class="slider-val" id="v1">50 members</span></div>
+            <input type="range" id="s1" min="0" max="50" value="50" />
+          </div>
+          <div class="slider-row">
+            <div class="slider-lbl"><span>Phase 2 · $597/mo</span><span class="slider-val" id="v2">50 members</span></div>
+            <input type="range" id="s2" min="0" max="50" value="50" />
+          </div>
+          <div class="slider-row">
+            <div class="slider-lbl"><span>Phase 3 · $697/mo</span><span class="slider-val" id="v3">50 members</span></div>
+            <input type="range" id="s3" min="0" max="50" value="50" />
+          </div>
+          <div class="slider-row">
+            <div class="slider-lbl"><span>Phase 4 · $797/mo</span><span class="slider-val" id="v4">50 members</span></div>
+            <input type="range" id="s4" min="0" max="50" value="50" />
+          </div>
+        </div>
+        <div class="calc-result">
+          <div class="calc-mrr" id="mrrOut">$129,400</div>
+          <div class="calc-mrr-lbl">MONTHLY RECURRING</div>
+          <div class="calc-arr">Annualized: <span class="calc-arr-num" id="arrOut">$1,552,800</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rev-grid">
+      <div class="rev-card"><div class="rev-name">FOUNDING 50 CLOSED</div><div class="rev-mrr">$24,850/mo</div><div class="rev-formula">50 × $497</div></div>
+      <div class="rev-card p2"><div class="rev-name">100 MEMBERS</div><div class="rev-mrr">$54,700/mo</div><div class="rev-formula">+50 × $597</div></div>
+      <div class="rev-card p3"><div class="rev-name">150 MEMBERS</div><div class="rev-mrr">$89,550/mo</div><div class="rev-formula">+50 × $697</div></div>
+      <div class="rev-card p4"><div class="rev-name">200 SOLD OUT</div><div class="rev-mrr">$129,400/mo</div><div class="rev-formula">+50 × $797</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TIMELINE ═══════════════ -->
+<section class="section scroll-target" id="timeline">
+  <div class="section-inner">
+    <span class="section-eyebrow">Timeline</span>
+    <h2>The Road to 200</h2>
+    <p class="section-sub">A realistic 12-month sellout map — phase by phase, milestone by milestone.</p>
+
+    <div class="timeline">
+      <div class="tl-track">
+        <div class="tl-month" style="left: 0%;">M1</div>
+        <div class="tl-month" style="left: 8.3%;">M2</div>
+        <div class="tl-month" style="left: 16.6%;">M3</div>
+        <div class="tl-month" style="left: 25%;">M4</div>
+        <div class="tl-month" style="left: 33.3%;">M5</div>
+        <div class="tl-month" style="left: 41.6%;">M6</div>
+        <div class="tl-month" style="left: 50%;">M7</div>
+        <div class="tl-month" style="left: 58.3%;">M8</div>
+        <div class="tl-month" style="left: 66.6%;">M9</div>
+        <div class="tl-month" style="left: 75%;">M10</div>
+        <div class="tl-month" style="left: 83.3%;">M11</div>
+        <div class="tl-month" style="left: 91.6%;">M12</div>
+
+        <div class="tl-marker" style="left: 2.5%;"></div>
+        <div class="tl-label" style="left: 2.5%;">Landing live</div>
+
+        <div class="tl-marker" style="left: 8.3%;"></div>
+        <div class="tl-label below" style="left: 8.3%;">First 25 members</div>
+
+        <div class="tl-marker" style="left: 16.6%;"></div>
+        <div class="tl-label" style="left: 16.6%;">Founding 50 closed</div>
+
+        <div class="tl-marker gold" style="left: 25%;"></div>
+        <div class="tl-label below" style="left: 25%;">First Coaching+ cohort</div>
+
+        <div class="tl-marker emerald" style="left: 37.5%;"></div>
+        <div class="tl-label" style="left: 37.5%;">First DWY signed</div>
+
+        <div class="tl-marker navy" style="left: 50%;"></div>
+        <div class="tl-label below" style="left: 50%;">100 members hit</div>
+
+        <div class="tl-marker navy" style="left: 66.6%;"></div>
+        <div class="tl-label" style="left: 66.6%;">Phase 4 opens</div>
+
+        <div class="tl-marker plum" style="left: 83.3%;"></div>
+        <div class="tl-label below" style="left: 83.3%;">Final push event</div>
+
+        <div class="tl-marker coral" style="left: 95%;"></div>
+        <div class="tl-label" style="left: 95%;">200 SOLD OUT</div>
+      </div>
+    </div>
+
+    <div class="rev-grid">
+      <div class="rev-card"><div class="rev-name">FOUNDING 50 CLOSED</div><div class="rev-mrr">$24,850/mo</div><div class="rev-formula">50 × $497</div></div>
+      <div class="rev-card p2"><div class="rev-name">100 MEMBERS</div><div class="rev-mrr">$54,700/mo</div><div class="rev-formula">+50 × $597</div></div>
+      <div class="rev-card p3"><div class="rev-name">150 MEMBERS</div><div class="rev-mrr">$89,550/mo</div><div class="rev-formula">+50 × $697</div></div>
+      <div class="rev-card p4"><div class="rev-name">200 SOLD OUT</div><div class="rev-mrr">$129,400/mo</div><div class="rev-formula">+50 × $797</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 7-DAY LAUNCH ═══════════════ -->
+<section class="section alt scroll-target" id="launch">
+  <div class="section-inner">
+    <span class="section-eyebrow">Next 7 Days</span>
+    <h2>The 7-Day Launch Checklist</h2>
+    <p class="section-sub">Ship the launch. Lock the Founding 50.</p>
+
+    <div class="day7">
+      <div class="day7-left">
+        <h3>Ship the launch.<br>Lock the<br>Founding 50.</h3>
+        <div class="day7-promise">
+          <div class="dp-tag">THE PROMISE</div>
+          <div class="dp-text">We don't strategize.<br>We install.</div>
+        </div>
+      </div>
+      <div class="day7-list">
+        <div class="day-item"><div class="day-num">DAY 1</div><div class="day-task">Finalize the live phase counter on the landing page. Wire Stripe checkout to Founding 50 product.</div></div>
+        <div class="day-item"><div class="day-num">DAY 2</div><div class="day-task">Build CMA Mini custom GPT. Gate with email opt-in. Publish to Mastermind tools page.</div></div>
+        <div class="day-item gold"><div class="day-num">DAY 3</div><div class="day-task">Record + publish anchor YouTube #1 ('The 9-Minute CMA'). Teaser Reel + LinkedIn post.</div></div>
+        <div class="day-item gold"><div class="day-num">DAY 4</div><div class="day-task">Personal DM outreach: 50 warm contacts. Use the Universal Close line verbatim.</div></div>
+        <div class="day-item emerald"><div class="day-num">DAY 5</div><div class="day-task">Send Email #1 of 4-part launch sequence. Emphasize price ladder + May 31 deadline.</div></div>
+        <div class="day-item emerald"><div class="day-num">DAY 6</div><div class="day-task">Run a 45-min live '9-Minute CMA Workshop'. Pitch Founding 50 at the close.</div></div>
+        <div class="day-item plum"><div class="day-num">DAY 7</div><div class="day-task">Sunday review: count members in, MQLs, reach. Reset for next week. Repeat.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ EMAIL CAPTURE ═══════════════ -->
+<section class="email-section scroll-target" id="join">
+  <div class="email-inner">
+    <span class="email-eyebrow">Founding 50 · Limited</span>
+    <h2>Lock The $497 Rate For Life</h2>
+    <p>Founding 50 closes at 50 members or May 31, whichever comes first. After that, the rate is gone forever. Drop your email and Edmund will personally send you the application link.</p>
+
+    <form class="email-form" id="joinForm" onsubmit="return submitJoin(event)">
+      <input type="email" name="email" placeholder="you@yourbrokerage.com" required />
+      <button type="submit">Lock My Rate</button>
+      <div id="joinMsg"></div>
+    </form>
+    <div class="email-fine">No spam. One welcome email + the application link. Powered by Formspree.</div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div>
+    The Edmund Bogen Team · Douglas Elliman · Boca Raton, FL<br>
+    <a href="mailto:edmund@bogenhomes.com">edmund@bogenhomes.com</a> · <a href="https://edmundbogen.github.io/bogen-method-preview/" target="_blank" rel="noopener">bogen-method-preview</a> · <a href="Bogen_Method_Lead_Generation_Plan.pdf" target="_blank" rel="noopener">Download the PDF</a>
+  </div>
+  <div class="footer-meta">© 2026 The Edmund Bogen Team. The Bogen Method™. Reignation. Edmund's Mastermind.</div>
+</footer>
+
+<script>
+// ═══════════════ PHASE COUNTER ═══════════════
+// Stored in localStorage so Edmund can update from a query string when he wants
+const PHASE_PRICES = [497, 597, 697, 797];
+const PHASE_NAMES = ['Phase 1 · Founding 50', 'Phase 2 · Next 50', 'Phase 3 · Next 50', 'Phase 4 · Final 50'];
+
+function getMemberCount() {
+  // Allow ?members=23 to override (Edmund can share that link), persist to localStorage
+  const url = new URL(window.location.href);
+  const param = url.searchParams.get('members');
+  if (param !== null) {
+    const n = Math.max(0, Math.min(200, parseInt(param, 10) || 0));
+    localStorage.setItem('bogen_members', n);
+    return n;
+  }
+  const stored = parseInt(localStorage.getItem('bogen_members') || '7', 10);
+  return Math.max(0, Math.min(200, stored));
+}
+
+function updatePhaseCounter(target) {
+  const phase = Math.min(3, Math.floor(target / 50));
+  const inPhase = target - phase * 50;
+  const remaining = 50 - inPhase;
+  const pct = (inPhase / 50) * 100;
+
+  document.getElementById('pcTitle').textContent = PHASE_NAMES[phase] + (phase === 0 ? ' — open now' : ' — locked rate');
+  document.getElementById('pcSub').textContent = `Locked rate: $${PHASE_PRICES[phase]}/mo for the life of your membership.`;
+  document.getElementById('pcMeta').textContent = `${inPhase} of 50 members · ${remaining} spots left`;
+  document.getElementById('pcDeadline').textContent = phase === 0 ? 'Closes May 31 or at 50 members' : 'Phase fills as members join';
+
+  // Animate the bar and number
+  setTimeout(() => {
+    document.getElementById('pcBar').style.width = pct + '%';
+  }, 100);
+
+  let n = 0;
+  const step = Math.max(1, Math.ceil(inPhase / 30));
+  const numEl = document.getElementById('pcNum');
+  const tick = setInterval(() => {
+    n = Math.min(inPhase, n + step);
+    numEl.textContent = n;
+    if (n >= inPhase) clearInterval(tick);
+  }, 35);
+}
+
+updatePhaseCounter(getMemberCount());
+
+// ═══════════════ REVENUE CALCULATOR ═══════════════
+const sliders = ['s1','s2','s3','s4'].map(id => document.getElementById(id));
+const valLabels = ['v1','v2','v3','v4'].map(id => document.getElementById(id));
+const mrrOut = document.getElementById('mrrOut');
+const arrOut = document.getElementById('arrOut');
+
+function fmt(n) {
+  return '$' + n.toLocaleString('en-US');
+}
+
+function updateCalc() {
+  let mrr = 0;
+  sliders.forEach((s, i) => {
+    const n = parseInt(s.value, 10);
+    valLabels[i].textContent = n + (n === 1 ? ' member' : ' members');
+    mrr += n * PHASE_PRICES[i];
+  });
+  mrrOut.textContent = fmt(mrr);
+  arrOut.textContent = fmt(mrr * 12);
+}
+sliders.forEach(s => s.addEventListener('input', updateCalc));
+updateCalc();
+
+// ═══════════════ EMAIL FORM ═══════════════
+async function submitJoin(e) {
+  e.preventDefault();
+  const form = e.target;
+  const msg = document.getElementById('joinMsg');
+  const email = form.email.value.trim();
+  if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+    msg.innerHTML = '<div class="err-msg">Please enter a valid email address.</div>';
+    return false;
+  }
+  msg.innerHTML = '';
+  // Try Formspree if a real endpoint is configured (replace ENDPOINT below).
+  // Fallback: mailto link to Edmund.
+  const endpoint = 'https://formspree.io/f/xpwdgwbq'; // generic placeholder — replace once Edmund creates a Formspree form
+  try {
+    const r = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, source: 'Bogen Method Lead Gen Plan' })
+    });
+    if (r.ok) {
+      msg.innerHTML = '<div class="ok-msg">You\u2019re on the Founding 50 list. Edmund will send the application link shortly.</div>';
+      form.reset();
+    } else {
+      throw new Error('Form post failed');
+    }
+  } catch (err) {
+    // Fallback: open mailto so the email still gets to Edmund
+    const subject = encodeURIComponent('Founding 50 · Lock my rate');
+    const body = encodeURIComponent(`Hi Edmund,\n\nLock my Founding 50 rate at $497/mo. My email: ${email}\n\nSend the application link.\n\nThanks.`);
+    window.location.href = `mailto:edmund@bogenhomes.com?subject=${subject}&body=${body}`;
+    msg.innerHTML = '<div class="ok-msg">Opening your email app so you can send Edmund a quick note. He\u2019ll reply with the application link.</div>';
+  }
+  return false;
+}
+
+// ═══════════════ REVEAL ON SCROLL ═══════════════
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(en => {
+    if (en.isIntersecting) {
+      en.target.classList.add('in');
+      io.unobserve(en.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal, .kpi-card, .persona-card, .obj-card, .phase-col, .rev-card, .lever-item, .fw-item, .stack-row').forEach(el => {
+  el.classList.add('reveal');
+  io.observe(el);
+});
+</script>
+
+</body>
+</html>
