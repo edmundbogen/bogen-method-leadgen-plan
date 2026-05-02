@@ -11,28 +11,33 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%231a3e5c'/><text x='50' y='66' text-anchor='middle' font-family='DM Sans,sans-serif' font-weight='700' font-size='48' fill='%2300a8e1'>EB</text></svg>" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%231a3e5c' stroke='%2300a8e1' stroke-width='3'/><text x='50' y='66' text-anchor='middle' font-family='Montserrat,sans-serif' font-weight='700' font-size='40' fill='%23ffffff'>EB</text></svg>" />
 
 <style>
 :root {
+  /* Edmund Bogen Brand Palette — Navy 60% / White 30% / Cyan 10% */
   --navy: #1a3e5c;
   --navy-deep: #0f2a42;
   --navy-soft: #26537a;
+  --navy-light: #3e6c93;
   --cyan: #00a8e1;
   --cyan-deep: #0086b8;
+  --cyan-soft: #4dd0ff;
   --white: #ffffff;
   --ink: #1a1a1a;
   --gray-bg: #f4f4f4;
   --gray-line: #e8e8e8;
   --gray-txt: #5e6b78;
   --gray-muted: #9aa6b2;
-  --gold: #e8b04b;
-  --emerald: #2fa37a;
-  --coral: #e96a5b;
-  --plum: #7a5fb5;
-  --sand: #f5efe4;
+  /* Brand-compliant accent variables — alias warm colors to brand navy/cyan
+     so legacy class selectors continue to render on-brand without breaking layout */
+  --gold: #26537a;        /* was #e8b04b — now navy-soft */
+  --emerald: #00a8e1;     /* was #2fa37a — now cyan */
+  --coral: #0f2a42;       /* was #e96a5b — now navy-deep */
+  --plum: #3e6c93;        /* was #7a5fb5 — now navy-light */
+  --sand: #f4f4f4;        /* was #f5efe4 — now gray-bg */
   --shadow-sm: 0 1px 2px rgba(15,42,66,0.08);
   --shadow: 0 4px 14px rgba(15,42,66,0.08);
   --shadow-lg: 0 12px 32px rgba(15,42,66,0.14);
@@ -43,9 +48,9 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--ink);
   background: var(--white);
   -webkit-font-smoothing: antialiased;
@@ -67,15 +72,30 @@ body {
 .nav-brand {
   display: flex; align-items: center; gap: 10px;
   color: var(--white); text-decoration: none;
-  font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 15px;
+  font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px;
   letter-spacing: 0.02em;
 }
 .nav-logo {
-  width: 30px; height: 30px; border-radius: 6px;
+  width: 36px; height: 36px; border-radius: 50%;
   background: var(--navy-deep);
+  border: 2px solid var(--cyan);
   display: grid; place-items: center;
-  color: var(--cyan); font-weight: 700; font-size: 13px;
-  font-family: 'DM Sans', sans-serif;
+  color: var(--white); font-weight: 700; font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+}
+.nav-brand-text {
+  display: flex; flex-direction: column; line-height: 1.15;
+}
+.nav-brand-line1 {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--white);
+}
+.nav-brand-line2 {
+  font-size: 9px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
 }
 .nav-links { display: flex; gap: 6px; flex-wrap: wrap; }
 .nav-links a {
@@ -119,12 +139,12 @@ body {
 .hero-eyebrow {
   display: inline-block; padding: 6px 14px;
   border-left: 3px solid var(--cyan);
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
-  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
+  font-size: 11px; letter-spacing: 0.20em; text-transform: uppercase;
   color: var(--cyan); margin-bottom: 24px;
 }
 .hero h1 {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: clamp(36px, 5.5vw, 64px); line-height: 1.05;
   margin-bottom: 18px; letter-spacing: -0.02em;
   max-width: 800px;
@@ -139,12 +159,12 @@ body {
   gap: 24px; max-width: 720px; margin-bottom: 36px;
 }
 .hero-stat-num {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: clamp(22px, 2.6vw, 32px); color: var(--cyan);
   line-height: 1.1; margin-bottom: 4px; letter-spacing: -0.01em;
 }
 .hero-stat-lbl {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
   color: rgba(255,255,255,0.7);
 }
@@ -152,7 +172,7 @@ body {
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 13px 22px; border-radius: 6px;
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
   text-decoration: none; cursor: pointer; border: 0;
   transition: all 0.18s;
@@ -176,12 +196,12 @@ body {
 .section-eyebrow {
   display: inline-block; padding: 4px 0 4px 14px;
   border-left: 3px solid var(--cyan);
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--cyan); margin-bottom: 14px;
 }
 .section h2 {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: clamp(28px, 3.6vw, 42px); color: var(--navy);
   line-height: 1.1; margin-bottom: 14px; letter-spacing: -0.015em;
   max-width: 800px;
@@ -202,11 +222,11 @@ body {
   display: grid; grid-template-columns: 1.4fr 1fr; gap: 36px; align-items: center;
 }
 .pc-eyebrow {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 11px; letter-spacing: 0.18em; color: var(--cyan); margin-bottom: 10px;
 }
 .pc-title {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 26px; margin-bottom: 8px;
 }
 .pc-sub { color: #cfe6f5; font-size: 14px; margin-bottom: 18px; }
@@ -228,7 +248,7 @@ body {
   border: 1px solid rgba(0,168,225,0.2);
 }
 .pc-num {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 64px; color: var(--cyan); line-height: 1; letter-spacing: -0.02em;
 }
 .pc-num-sub { font-size: 13px; color: #cfe6f5; margin-top: 6px; letter-spacing: 0.05em; }
@@ -255,7 +275,7 @@ body {
 .kpi-card.plum { border-top-color: var(--plum); }
 .kpi-card.navy { border-top-color: var(--navy); }
 .kpi-lbl {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
   color: var(--cyan); margin-bottom: 10px;
 }
@@ -265,7 +285,7 @@ body {
 .kpi-card.plum .kpi-lbl { color: var(--plum); }
 .kpi-card.navy .kpi-lbl { color: var(--navy); }
 .kpi-big {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 28px; color: var(--navy); line-height: 1.05; margin-bottom: 6px;
   letter-spacing: -0.01em;
 }
@@ -288,7 +308,7 @@ body {
 .ladder-bar.p3 { background: var(--navy); width: 80%; }
 .ladder-bar.p4 { background: var(--navy-deep); width: 70%; }
 .ladder-name { font-weight: 600; font-size: 14px; }
-.ladder-price { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 16px; }
+.ladder-price { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; }
 .ladder-meta { font-size: 12px; color: var(--gray-txt); }
 .ladder-chip {
   background: var(--navy-deep); color: var(--white); font-size: 9px;
@@ -314,7 +334,7 @@ body {
 .fw-item.plum { border-left-color: var(--plum); }
 .fw-item.coral { border-left-color: var(--coral); }
 .fw-num {
-  display: inline-block; font-family: 'DM Sans', sans-serif; font-weight: 700;
+  display: inline-block; font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 13px; color: var(--cyan); margin-right: 10px;
 }
 .fw-item.gold .fw-num { color: var(--gold); }
@@ -322,7 +342,7 @@ body {
 .fw-item.plum .fw-num { color: var(--plum); }
 .fw-item.coral .fw-num { color: var(--coral); }
 .fw-name {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--navy);
 }
@@ -343,7 +363,7 @@ body {
 .persona-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 .persona-tag {
   background: var(--cyan); color: var(--white);
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
   padding: 12px 20px;
 }
@@ -351,18 +371,18 @@ body {
 .persona-card.r3 .persona-tag { background: var(--emerald); }
 .persona-body { padding: 22px; }
 .persona-title {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 19px; color: var(--navy); margin-bottom: 4px;
 }
 .persona-tier {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 16px; color: var(--cyan); margin-bottom: 16px;
 }
 .persona-card.r2 .persona-tier { color: var(--gold); }
 .persona-card.r3 .persona-tier { color: var(--emerald); }
 .persona-section { margin-bottom: 14px; }
 .persona-h {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--coral); margin-bottom: 6px;
 }
@@ -393,7 +413,7 @@ body {
 .channel-row:last-child { border-bottom: 0; }
 .channel-row.head {
   background: var(--navy); color: var(--white);
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
 }
 .channel-row:not(.head):hover { background: var(--gray-bg); }
@@ -405,7 +425,7 @@ body {
 .roi-pill.r1.on { background: var(--cyan); }
 .roi-pill.r2.on { background: var(--gold); }
 .roi-pill.r3.on { background: var(--emerald); }
-.roi-num { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 12px; color: var(--navy); margin-left: 6px; }
+.roi-num { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; color: var(--navy); margin-left: 6px; }
 .channel-note { color: var(--gray-txt); font-size: 12px; }
 @media (max-width: 900px) {
   .channel-row { grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; font-size: 11px; }
@@ -423,18 +443,18 @@ body {
 }
 .funnel-bar:hover { transform: scale(1.02); }
 .fb-name {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
 }
 .fb-count {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 22px; letter-spacing: -0.01em;
 }
 .fb-sub { font-size: 11px; color: rgba(255,255,255,0.85); margin-top: 4px; }
 .fb-content { display: flex; flex-direction: column; gap: 2px; }
 .lever-list { display: flex; flex-direction: column; gap: 14px; }
 .lever-item h4 {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 13px; color: var(--navy); margin-bottom: 4px;
 }
 .lever-item p { font-size: 13px; color: var(--gray-txt); line-height: 1.55; }
@@ -458,10 +478,10 @@ body {
 .lm-bar.r5 { background: var(--coral); }
 .lm-bar.r6 { background: var(--navy-deep); }
 .lm-tag {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 9px; letter-spacing: 0.15em; opacity: 0.9; margin-bottom: 4px;
 }
-.lm-name { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 15px; }
+.lm-name { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px; }
 .lm-arrow { color: var(--gray-muted); font-size: 18px; }
 .lm-desc { font-size: 13px; color: var(--gray-txt); line-height: 1.5; }
 @media (max-width: 720px) {
@@ -489,13 +509,13 @@ body {
 }
 .pt-cell:last-child { border-right: 0; }
 .pt-row.head .pt-cell {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
   border-right-color: rgba(255,255,255,0.15);
 }
 .pt-pillar {
   background: var(--cyan); color: var(--white);
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
   display: flex; align-items: center; justify-content: center;
   writing-mode: vertical-rl; transform: rotate(180deg);
@@ -516,7 +536,7 @@ body {
 .day-head {
   background: var(--navy); color: var(--white);
   padding: 10px; text-align: center;
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 11px; letter-spacing: 0.12em;
 }
 .day-block {
@@ -553,11 +573,11 @@ body {
 .phase-col.fuel .phase-head { background: var(--gold); }
 .phase-col.flywheel .phase-head { background: var(--emerald); }
 .phase-tag {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 10px; letter-spacing: 0.16em; opacity: 0.9; margin-bottom: 8px;
 }
 .phase-name {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 26px; letter-spacing: -0.01em; line-height: 1; margin-bottom: 10px;
 }
 .phase-goal { font-size: 13px; opacity: 0.95; line-height: 1.45; }
@@ -575,7 +595,7 @@ body {
   width: 24px; height: 24px; border-radius: 999px;
   background: var(--cyan); color: var(--white);
   display: grid; place-items: center;
-  font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 12px;
+  font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px;
 }
 .phase-col.fuel .phase-body li::before { background: var(--gold); }
 .phase-col.flywheel .phase-body li::before { background: var(--emerald); }
@@ -595,7 +615,7 @@ body {
 .stack-row.data { border-left-color: var(--plum); }
 .stack-row.team { border-left-color: var(--navy-soft); }
 .stack-name {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 12px; letter-spacing: 0.16em; color: var(--cyan);
 }
 .stack-row.nurture .stack-name { color: var(--gold); }
@@ -618,7 +638,7 @@ body {
 .obj-card.plum { border-left-color: var(--plum); }
 .obj-card.coral { border-left-color: var(--coral); }
 .obj-tag {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 10px; letter-spacing: 0.14em; color: var(--cyan); margin-bottom: 8px;
 }
 .obj-card.gold .obj-tag { color: var(--gold); }
@@ -626,7 +646,7 @@ body {
 .obj-card.plum .obj-tag { color: var(--plum); }
 .obj-card.coral .obj-tag { color: var(--coral); }
 .obj-q {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 17px; color: var(--navy); margin-bottom: 12px; line-height: 1.3;
 }
 .obj-a { font-size: 14px; color: var(--gray-txt); line-height: 1.55; }
@@ -635,8 +655,8 @@ body {
   border-radius: var(--r); padding: 28px 32px; margin-top: 24px;
   border-left: 5px solid var(--cyan);
 }
-.obj-close-tag { font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 10px; letter-spacing: 0.16em; color: var(--cyan); margin-bottom: 12px; }
-.obj-close-q { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.35; margin-bottom: 8px; }
+.obj-close-tag { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 10px; letter-spacing: 0.16em; color: var(--cyan); margin-bottom: 12px; }
+.obj-close-q { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.35; margin-bottom: 8px; }
 .obj-close-note { font-size: 13px; color: #bcd6e9; }
 @media (max-width: 720px) { .obj-grid { grid-template-columns: 1fr; } }
 
@@ -652,13 +672,13 @@ body {
 }
 .risk-row.head {
   background: var(--navy); color: var(--white);
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
 }
 .risk-row:last-child { border-bottom: 0; }
 .severity-pill {
   display: inline-block; padding: 4px 10px; border-radius: 999px;
-  font-family: 'Work Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 10px; letter-spacing: 0.1em; color: var(--white);
 }
 .severity-pill.high { background: var(--coral); }
@@ -682,7 +702,7 @@ body {
 }
 .guar-card.gold { border-top-color: var(--gold); }
 .guar-card.emerald { border-top-color: var(--emerald); }
-.guar-tag { font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 10px; letter-spacing: 0.16em; color: var(--cyan); margin-bottom: 8px; }
+.guar-tag { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 10px; letter-spacing: 0.16em; color: var(--cyan); margin-bottom: 8px; }
 .guar-card.gold .guar-tag { color: var(--gold); }
 .guar-card.emerald .guar-tag { color: var(--emerald); }
 .guar-text { font-size: 13px; color: rgba(255,255,255,0.95); line-height: 1.55; }
@@ -695,7 +715,7 @@ body {
   box-shadow: var(--shadow-lg); margin-bottom: 30px;
 }
 .calc h3 {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 24px; margin-bottom: 6px;
 }
 .calc-sub { color: #cfe6f5; font-size: 14px; margin-bottom: 28px; }
@@ -706,10 +726,10 @@ body {
 .slider-lbl {
   display: flex; justify-content: space-between; font-size: 12px;
   color: #9fb8cc; letter-spacing: 0.06em; margin-bottom: 8px;
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   text-transform: uppercase;
 }
-.slider-val { color: var(--cyan); font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; }
+.slider-val { color: var(--cyan); font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 700; }
 input[type=range] {
   width: 100%; -webkit-appearance: none; height: 6px;
   background: rgba(255,255,255,0.1); border-radius: 999px; outline: none;
@@ -730,11 +750,11 @@ input[type=range]::-moz-range-thumb {
   background: rgba(0,168,225,0.08); border: 1px solid rgba(0,168,225,0.25);
 }
 .calc-mrr {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 44px; color: var(--cyan); line-height: 1;
   letter-spacing: -0.02em; transition: color 0.2s;
 }
-.calc-mrr-lbl { font-size: 11px; color: #cfe6f5; margin-top: 6px; letter-spacing: 0.14em; font-family: 'Work Sans', sans-serif; font-weight: 600; }
+.calc-mrr-lbl { font-size: 11px; color: #cfe6f5; margin-top: 6px; letter-spacing: 0.14em; font-family: 'Montserrat', sans-serif; font-weight: 600; }
 .calc-arr { font-size: 14px; color: rgba(255,255,255,0.85); margin-top: 14px; }
 .calc-arr-num { color: var(--cyan); font-weight: 700; }
 @media (max-width: 720px) {
@@ -769,7 +789,7 @@ input[type=range]::-moz-range-thumb {
 .tl-label.below { top: auto; bottom: 22px; color: var(--gray-txt); }
 .tl-month {
   position: absolute; top: 8px; transform: translateX(-50%);
-  font-size: 10px; color: var(--gray-muted); font-family: 'Work Sans', sans-serif;
+  font-size: 10px; color: var(--gray-muted); font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
 
@@ -785,14 +805,14 @@ input[type=range]::-moz-range-thumb {
 .rev-card.p3 { border-top-color: var(--navy); }
 .rev-card.p4 { border-top-color: var(--navy-deep); }
 .rev-name {
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 11px; letter-spacing: 0.14em; color: var(--cyan); margin-bottom: 8px;
 }
 .rev-card.p2 .rev-name { color: var(--navy-soft); }
 .rev-card.p3 .rev-name { color: var(--navy); }
 .rev-card.p4 .rev-name { color: var(--navy-deep); }
 .rev-mrr {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 24px; color: var(--navy); letter-spacing: -0.01em; margin-bottom: 4px;
 }
 .rev-formula { font-size: 12px; color: var(--gray-txt); }
@@ -810,7 +830,7 @@ input[type=range]::-moz-range-thumb {
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
 }
 .day7-left h3 {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 32px; line-height: 1.1; margin-bottom: 18px; position: relative; z-index: 1;
   letter-spacing: -0.02em;
 }
@@ -819,8 +839,8 @@ input[type=range]::-moz-range-thumb {
   padding: 18px 22px; border-radius: var(--r); position: relative; z-index: 1;
   margin-top: 24px;
 }
-.dp-tag { font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 10px; letter-spacing: 0.16em; opacity: 0.85; margin-bottom: 6px; }
-.dp-text { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; }
+.dp-tag { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 10px; letter-spacing: 0.16em; opacity: 0.85; margin-bottom: 6px; }
+.dp-text { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; }
 .day7-list { display: flex; flex-direction: column; gap: 10px; }
 .day-item {
   display: grid; grid-template-columns: 70px 1fr; gap: 14px; align-items: center;
@@ -831,7 +851,7 @@ input[type=range]::-moz-range-thumb {
 .day-item:hover { transform: translateX(4px); box-shadow: var(--shadow); }
 .day-num {
   background: var(--cyan); color: var(--white);
-  font-family: 'Work Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 11px; letter-spacing: 0.12em;
   padding: 8px 0; text-align: center; border-radius: var(--r-sm);
 }
@@ -858,12 +878,12 @@ input[type=range]::-moz-range-thumb {
 .email-eyebrow {
   display: inline-block; padding: 4px 0 4px 14px;
   border-left: 3px solid var(--cyan);
-  font-family: 'Work Sans', sans-serif; font-weight: 600;
+  font-family: 'Montserrat', sans-serif; font-weight: 600;
   font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--cyan); margin-bottom: 14px;
 }
 .email-section h2 {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: clamp(28px, 4vw, 42px); line-height: 1.1; margin-bottom: 14px;
   letter-spacing: -0.015em;
 }
@@ -887,7 +907,7 @@ input[type=range]::-moz-range-thumb {
 .email-form button {
   padding: 14px 28px; border-radius: 6px; border: 0;
   background: var(--cyan); color: var(--white);
-  font-family: 'Work Sans', sans-serif; font-weight: 700;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
   font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
   cursor: pointer; transition: all 0.18s;
 }
@@ -905,8 +925,8 @@ input[type=range]::-moz-range-thumb {
   padding: 36px; border-radius: var(--r); margin-top: 30px;
   border-top: 4px solid var(--cyan);
 }
-.promise-tag { font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.18em; color: var(--cyan); margin-bottom: 8px; }
-.promise-text { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 24px; margin-bottom: 6px; line-height: 1.2; }
+.promise-tag { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.18em; color: var(--cyan); margin-bottom: 8px; }
+.promise-text { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 24px; margin-bottom: 6px; line-height: 1.2; }
 .promise-sub { color: #bcd6e9; font-size: 14px; line-height: 1.55; }
 
 /* ───────── FOOTER ───────── */
@@ -917,6 +937,57 @@ input[type=range]::-moz-range-thumb {
 .footer a { color: var(--cyan); text-decoration: none; }
 .footer a:hover { text-decoration: underline; }
 .footer-meta { color: var(--gray-muted); font-size: 11px; margin-top: 12px; letter-spacing: 0.04em; }
+
+/* ───────── FOOTER BRAND ENHANCEMENTS ───────── */
+.footer { padding: 60px 24px; }
+.footer-brand { margin-bottom: 24px; }
+.footer-logo-wrap {
+  display: inline-flex; align-items: center; gap: 16px;
+}
+.footer-logo {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--navy);
+  border: 2px solid var(--cyan);
+  display: grid; place-items: center;
+  color: var(--white); font-weight: 700; font-size: 20px;
+  font-family: 'Montserrat', sans-serif; letter-spacing: 0.05em;
+}
+.footer-lockup { text-align: left; line-height: 1.4; }
+.footer-line1 {
+  font-size: 14px; font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--white);
+}
+.footer-line2 {
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  margin-top: 2px;
+}
+.footer-line3 {
+  font-size: 10px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--cyan);
+  margin-top: 6px;
+}
+.footer-info {
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 14px;
+}
+.footer-info a {
+  color: var(--cyan); text-decoration: none;
+}
+.footer-info a:hover { color: var(--white); text-decoration: underline; }
+.footer-meta {
+  font-size: 10px; color: var(--gray-muted);
+  letter-spacing: 0.08em;
+}
+@media (max-width: 720px) {
+  .footer-logo-wrap { flex-direction: column; gap: 12px; text-align: center; }
+  .footer-lockup { text-align: center; }
+}
 
 /* ───────── REVEAL ANIMATION ───────── */
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s, transform 0.7s; }
@@ -933,7 +1004,10 @@ input[type=range]::-moz-range-thumb {
   <div class="nav-inner">
     <a href="#top" class="nav-brand">
       <span class="nav-logo">EB</span>
-      <span>The Bogen Method</span>
+      <span class="nav-brand-text">
+        <span class="nav-brand-line1">THE EDMUND BOGEN TEAM</span>
+        <span class="nav-brand-line2">AT DOUGLAS ELLIMAN · BOGEN.AI</span>
+      </span>
     </a>
     <div class="nav-links">
       <a href="#dashboard">Dashboard</a>
@@ -953,7 +1027,7 @@ input[type=range]::-moz-range-thumb {
 <!-- ═══════════════ HERO ═══════════════ -->
 <section class="hero" id="top">
   <div class="hero-inner">
-    <span class="hero-eyebrow">The Edmund Bogen Team · Bogen.ai</span>
+    <span class="hero-eyebrow">THE EDMUND BOGEN TEAM · DOUGLAS ELLIMAN · BOGEN.AI</span>
     <h1>Stop Studying AI.<br>Start Shipping It.</h1>
     <p class="hero-sub">The Bogen Method is the coaching room where serious realtors learn to use AI in their business. Try it for 30 days. If it's not right for you, we pay you 110% to leave. Founding 50 open now.</p>
 
@@ -1096,34 +1170,34 @@ input[type=range]::-moz-range-thumb {
           </g>
           <!-- hub -->
           <circle cx="200" cy="200" r="62" fill="#1a3e5c"/>
-          <text x="200" y="190" text-anchor="middle" fill="#00a8e1" font-family="Work Sans, sans-serif" font-weight="600" font-size="11" letter-spacing="1.5">THE BOGEN</text>
-          <text x="200" y="208" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">FLYWHEEL</text>
+          <text x="200" y="190" text-anchor="middle" fill="#00a8e1" font-family="Montserrat, sans-serif" font-weight="600" font-size="11" letter-spacing="1.5">THE BOGEN</text>
+          <text x="200" y="208" text-anchor="middle" fill="#ffffff" font-family="Montserrat, sans-serif" font-weight="700" font-size="16">FLYWHEEL</text>
           <text x="200" y="228" text-anchor="middle" fill="#00a8e1" font-size="20">↻</text>
           <!-- nodes -->
           <g>
             <circle cx="200" cy="50" r="28" fill="#00a8e1"/>
-            <text x="200" y="56" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="20">1</text>
-            <text x="200" y="22" text-anchor="middle" fill="#1a3e5c" font-family="Work Sans, sans-serif" font-weight="600" font-size="12" letter-spacing="1">CONTENT</text>
+            <text x="200" y="56" text-anchor="middle" fill="#ffffff" font-family="Montserrat, sans-serif" font-weight="700" font-size="20">1</text>
+            <text x="200" y="22" text-anchor="middle" fill="#1a3e5c" font-family="Montserrat, sans-serif" font-weight="600" font-size="12" letter-spacing="1">CONTENT</text>
           </g>
           <g>
-            <circle cx="343" cy="154" r="28" fill="#e8b04b"/>
-            <text x="343" y="160" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="20">2</text>
-            <text x="343" y="118" text-anchor="middle" fill="#1a3e5c" font-family="Work Sans, sans-serif" font-weight="600" font-size="12" letter-spacing="1">CAPTURE</text>
+            <circle cx="343" cy="154" r="28" fill="#26537a"/>
+            <text x="343" y="160" text-anchor="middle" fill="#ffffff" font-family="Montserrat, sans-serif" font-weight="700" font-size="20">2</text>
+            <text x="343" y="118" text-anchor="middle" fill="#1a3e5c" font-family="Montserrat, sans-serif" font-weight="600" font-size="12" letter-spacing="1">CAPTURE</text>
           </g>
           <g>
-            <circle cx="288" cy="343" r="28" fill="#2fa37a"/>
-            <text x="288" y="349" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="20">3</text>
-            <text x="288" y="385" text-anchor="middle" fill="#1a3e5c" font-family="Work Sans, sans-serif" font-weight="600" font-size="12" letter-spacing="1">CONVERT</text>
+            <circle cx="288" cy="343" r="28" fill="#0086b8"/>
+            <text x="288" y="349" text-anchor="middle" fill="#ffffff" font-family="Montserrat, sans-serif" font-weight="700" font-size="20">3</text>
+            <text x="288" y="385" text-anchor="middle" fill="#1a3e5c" font-family="Montserrat, sans-serif" font-weight="600" font-size="12" letter-spacing="1">CONVERT</text>
           </g>
           <g>
-            <circle cx="112" cy="343" r="28" fill="#7a5fb5"/>
-            <text x="112" y="349" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="20">4</text>
-            <text x="112" y="385" text-anchor="middle" fill="#1a3e5c" font-family="Work Sans, sans-serif" font-weight="600" font-size="12" letter-spacing="1">COMMUNITY</text>
+            <circle cx="112" cy="343" r="28" fill="#3e6c93"/>
+            <text x="112" y="349" text-anchor="middle" fill="#ffffff" font-family="Montserrat, sans-serif" font-weight="700" font-size="20">4</text>
+            <text x="112" y="385" text-anchor="middle" fill="#1a3e5c" font-family="Montserrat, sans-serif" font-weight="600" font-size="12" letter-spacing="1">COMMUNITY</text>
           </g>
           <g>
-            <circle cx="57" cy="154" r="28" fill="#e96a5b"/>
-            <text x="57" y="160" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="700" font-size="20">5</text>
-            <text x="57" y="118" text-anchor="middle" fill="#1a3e5c" font-family="Work Sans, sans-serif" font-weight="600" font-size="12" letter-spacing="1">COMPOUND</text>
+            <circle cx="57" cy="154" r="28" fill="#1a3e5c"/>
+            <text x="57" y="160" text-anchor="middle" fill="#ffffff" font-family="Montserrat, sans-serif" font-weight="700" font-size="20">5</text>
+            <text x="57" y="118" text-anchor="middle" fill="#1a3e5c" font-family="Montserrat, sans-serif" font-weight="600" font-size="12" letter-spacing="1">COMPOUND</text>
           </g>
         </svg>
       </div>
@@ -1874,11 +1948,23 @@ input[type=range]::-moz-range-thumb {
 
 <!-- ═══════════════ FOOTER ═══════════════ -->
 <footer class="footer">
-  <div>
-    The Edmund Bogen Team · Douglas Elliman · Boca Raton, FL<br>
-    <a href="mailto:edmund@bogenhomes.com">edmund@bogenhomes.com</a> · <a href="mailto:edmund@bogenhomes.com?subject=Member%20Agreement%20Request">Request Member Agreement</a> · <a href="Bogen_Method_Lead_Generation_Plan.pdf" target="_blank" rel="noopener">Download the PDF</a>
+  <div class="footer-brand">
+    <div class="footer-logo-wrap">
+      <span class="footer-logo">EB</span>
+      <div class="footer-lockup">
+        <div class="footer-line1">THE EDMUND BOGEN TEAM</div>
+        <div class="footer-line2">AT DOUGLAS ELLIMAN REAL ESTATE</div>
+        <div class="footer-line3">BOGEN.AI · EDMUND'S MASTERMIND · THE BOGEN METHOD&trade;</div>
+      </div>
+    </div>
   </div>
-  <div class="footer-meta">© 2026 The Edmund Bogen Team. The Bogen Method™ (common-law mark). Edmund's Mastermind.</div>
+  <div class="footer-info">
+    BOCA RATON, FLORIDA &nbsp;·&nbsp;
+    <a href="mailto:edmund@bogenhomes.com">EDMUND@BOGENHOMES.COM</a> &nbsp;·&nbsp;
+    <a href="mailto:edmund@bogenhomes.com?subject=Member%20Agreement%20Request">REQUEST MEMBER AGREEMENT</a> &nbsp;·&nbsp;
+    <a href="Bogen_Method_Lead_Generation_Plan.pdf" target="_blank" rel="noopener">DOWNLOAD THE PDF</a>
+  </div>
+  <div class="footer-meta">&copy; 2026 The Edmund Bogen Team. The Bogen Method&trade; (common-law mark). Edmund's Mastermind. All rights reserved.</div>
 </footer>
 
 <script>
