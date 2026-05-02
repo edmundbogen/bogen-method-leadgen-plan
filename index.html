@@ -999,6 +999,136 @@ input[type=range]::-moz-range-thumb {
 </head>
 <body>
 
+<!-- ═══ Password Gate ═══ -->
+<div id="password-gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+  <div class="gate-card">
+    <div class="gate-logo">EB</div>
+    <div class="gate-eyebrow">THE EDMUND BOGEN TEAM · BOGEN.AI</div>
+    <h1 id="gate-title" class="gate-title">Private Preview</h1>
+    <p class="gate-sub">This page is shared by invitation. Enter the access code provided by Edmund to continue.</p>
+    <form id="gate-form" autocomplete="off">
+      <input id="gate-input" type="password" placeholder="Access code" autocomplete="off" autofocus />
+      <button type="submit">Unlock</button>
+    </form>
+    <div id="gate-error" class="gate-error" aria-live="polite"></div>
+    <div class="gate-meta">© 2026 The Edmund Bogen Team · Douglas Elliman Real Estate</div>
+  </div>
+</div>
+<style id="gate-style">
+  html.gate-locked, html.gate-locked body { overflow: hidden !important; }
+  html.gate-locked > body > *:not(#password-gate):not(script):not(style) { display: none !important; }
+  #password-gate {
+    position: fixed; inset: 0; z-index: 99999;
+    background: linear-gradient(135deg, #0f2a42 0%, #1a3e5c 100%);
+    display: grid; place-items: center; padding: 24px;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  #password-gate .gate-card {
+    background: #ffffff; border-radius: 6px; padding: 48px 40px;
+    max-width: 440px; width: 100%; text-align: center;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+    border-top: 4px solid #00a8e1;
+  }
+  .gate-logo {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: #1a3e5c; border: 2px solid #00a8e1;
+    color: #ffffff; font-weight: 700; font-size: 22px;
+    letter-spacing: 0.05em;
+    display: grid; place-items: center;
+    margin: 0 auto 18px;
+  }
+  .gate-eyebrow {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.20em;
+    text-transform: uppercase; color: #00a8e1; margin-bottom: 14px;
+  }
+  .gate-title {
+    font-size: 26px; font-weight: 600; color: #1a3e5c;
+    margin: 0 0 12px; letter-spacing: 0.01em;
+  }
+  .gate-sub {
+    font-size: 14px; color: #5e6b78; line-height: 1.6;
+    margin: 0 0 24px;
+  }
+  #gate-form { display: flex; flex-direction: column; gap: 10px; }
+  #gate-input {
+    padding: 14px 16px; border: 1px solid #e8e8e8; border-radius: 4px;
+    font-size: 15px; font-family: inherit; color: #1a3e5c;
+    text-align: center; letter-spacing: 0.04em;
+    transition: border-color .15s;
+  }
+  #gate-input:focus { outline: none; border-color: #00a8e1; }
+  #gate-form button {
+    padding: 14px 16px; background: #00a8e1; color: #ffffff;
+    border: none; border-radius: 4px; cursor: pointer;
+    font-family: inherit; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    transition: background .15s;
+  }
+  #gate-form button:hover { background: #0086b8; }
+  .gate-error {
+    min-height: 18px; margin-top: 12px;
+    color: #b8243c; font-size: 12px; font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .gate-meta {
+    margin-top: 28px; font-size: 10px; letter-spacing: 0.10em;
+    text-transform: uppercase; color: #9aa6b2;
+  }
+</style>
+<script id="gate-script">
+(function() {
+  var EXPECTED = "3c71a21a1aa802a330db59c4980242429339cec45b42399259e0592a0c8c5be3";
+  var KEY = "bmlgp_unlocked_v1";
+  document.documentElement.classList.add("gate-locked");
+
+  function unlock() {
+    document.documentElement.classList.remove("gate-locked");
+    var g = document.getElementById("password-gate");
+    if (g) g.parentNode.removeChild(g);
+    var s = document.getElementById("gate-style");
+    if (s) s.parentNode.removeChild(s);
+  }
+
+  try {
+    if (sessionStorage.getItem(KEY) === "1") { unlock(); return; }
+  } catch (e) {}
+
+  function hashHex(str) {
+    var enc = new TextEncoder().encode(str);
+    return crypto.subtle.digest("SHA-256", enc).then(function(buf) {
+      var arr = Array.from(new Uint8Array(buf));
+      return arr.map(function(b){ return b.toString(16).padStart(2,"0"); }).join("");
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var form = document.getElementById("gate-form");
+    var input = document.getElementById("gate-input");
+    var err = document.getElementById("gate-error");
+    if (!form) return;
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      err.textContent = "";
+      hashHex(input.value).then(function(h) {
+        if (h === EXPECTED) {
+          try { sessionStorage.setItem(KEY, "1"); } catch(e){}
+          unlock();
+        } else {
+          err.textContent = "Incorrect access code.";
+          input.value = "";
+          input.focus();
+        }
+      }).catch(function() {
+        err.textContent = "Browser does not support secure unlock.";
+      });
+    });
+  });
+})();
+</script>
+<!-- ═══ /Password Gate ═══ -->
+
+
+
 <!-- ═══════════════ NAV ═══════════════ -->
 <nav class="nav">
   <div class="nav-inner">
